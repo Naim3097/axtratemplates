@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ETHOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="menu-trigger">
+                <i class="fas fa-bars"></i> MENU
+            </div>
+            <a href="index.html" class="logo">ETHOS.</a>
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay Menu -->
+    <div class="overlay-menu">
+        <div class="close-menu" style="position: absolute; top: 2rem; right: 2rem; color: #fff; font-size: 2rem; cursor: pointer;">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#" class="lean-x-trigger">About</a></li>
+            <li><a href="#" class="lean-x-trigger">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Shop Header -->
+    <header class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">The Collection</h1>
+                <p class="hero-subtitle">Explore our full range of sustainable apparel.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Content -->
+    <section class="section">
+        <div class="container">
+            <div class="shop-layout" style="display: grid; grid-template-columns: 250px 1fr; gap: 3rem;">
+                
+                <!-- Sidebar -->
+                <aside class="shop-sidebar" style="display: none; @media(min-width: 768px) { display: block; }">
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: inline-block;">Categories</h3>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted); text-decoration: none; transition: color 0.3s;">All Products</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: #fff; text-decoration: none; font-weight: bold;">Men</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted); text-decoration: none; transition: color 0.3s;">Women</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted); text-decoration: none; transition: color 0.3s;">Accessories</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted); text-decoration: none; transition: color 0.3s;">Sale</a></li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: inline-block;">Price</h3>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <input type="number" placeholder="Min" style="width: 100%; padding: 0.5rem; background: var(--color-surface); border: 1px solid rgba(255,255,255,0.1); color: #fff;">
+                            <span>-</span>
+                            <input type="number" placeholder="Max" style="width: 100%; padding: 0.5rem; background: var(--color-surface); border: 1px solid rgba(255,255,255,0.1); color: #fff;">
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 1">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Organic Cotton Dress</h3>
+                            <span class="product-price">$89.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+    
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Hemp T-Shirt</h3>
+                            <span class="product-price">$45.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+    
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 3">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Recycled Tote</h3>
+                            <span class="product-price">$35.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+    
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 4">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Denim Jacket</h3>
+                            <span class="product-price">$120.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 5">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Summer Blouse</h3>
+                            <span class="product-price">$65.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 6">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Canvas Sneakers</h3>
+                            <span class="product-price">$95.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 7">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Linen Shirt</h3>
+                            <span class="product-price">$75.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 8">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Active Leggings</h3>
+                            <span class="product-price">$55.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">ETHOS.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Fashion with a conscience.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">Men</a></li>
+                    <li><a href="shop.html">Women</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">Our Story</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">Instagram</a></li>
+                    <li><a href="#" class="lean-x-trigger">Twitter</a></li>
+                    <li><a href="#" class="lean-x-trigger">Facebook</a></li>
+                    <li><a href="#" class="lean-x-trigger">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 ETHOS Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

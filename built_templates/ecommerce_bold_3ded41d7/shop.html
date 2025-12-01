@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | VOLT Streetwear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="index.html" class="logo">VOLT.</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="#" class="lean-x-trigger">New Arrivals</a></li>
+                <li><a href="#" class="lean-x-trigger">Collections</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">All Products</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Shop</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Content -->
+    <section class="section">
+        <div class="container shop-container">
+            <!-- Sidebar -->
+            <aside class="shop-sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#">All Products <span>(42)</span></a></li>
+                        <li><a href="#">Jackets <span>(12)</span></a></li>
+                        <li><a href="#">Hoodies <span>(8)</span></a></li>
+                        <li><a href="#">T-Shirts <span>(15)</span></a></li>
+                        <li><a href="#">Pants <span>(10)</span></a></li>
+                        <li><a href="#">Accessories <span>(7)</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Price Range</h3>
+                    <div style="margin-top: 1rem;">
+                        <input type="range" min="0" max="200" value="100" style="width: 100%; accent-color: var(--color-primary);">
+                        <div style="display: flex; justify-content: space-between; margin-top: 0.5rem; color: var(--color-text-muted);">
+                            <span>$0</span>
+                            <span>$200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Size</h3>
+                    <div class="size-selector" style="flex-wrap: wrap;">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn active">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="shop-main">
+                <div class="shop-controls">
+                    <p style="color: var(--color-text-muted);">Showing 1-6 of 42 results</p>
+                    <select class="sort-select">
+                        <option>Default Sorting</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card reveal">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 1">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Neon Bomber</h3>
+                            <span class="product-price">$120.00</span>
+                            <a href="product.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card reveal" style="transition-delay: 0.1s;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a302c27e3844?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Graphic Tee</h3>
+                            <span class="product-price">$45.00</span>
+                            <a href="product.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card reveal" style="transition-delay: 0.2s;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 3">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Urban Hoodie</h3>
+                            <span class="product-price">$85.00</span>
+                            <a href="product.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card reveal">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551028919-ac7bcb7d715c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 4">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Street Jacket</h3>
+                            <span class="product-price">$95.00</span>
+                            <a href="product.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card reveal" style="transition-delay: 0.1s;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 5">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Black Tee</h3>
+                            <span class="product-price">$40.00</span>
+                            <a href="product.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card reveal" style="transition-delay: 0.2s;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 6">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Graphic Shirt</h3>
+                            <span class="product-price">$55.00</span>
+                            <a href="product.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">View</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 3rem;">
+                    <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">1</a>
+                    <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">2</a>
+                    <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">3</a>
+                    <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">VOLT.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Electrifying fashion for the modern rebel.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">New Arrivals</a></li>
+                    <li><a href="shop.html">Best Sellers</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">Help Center</a></li>
+                    <li><a href="#" class="lean-x-trigger">Shipping Info</a></li>
+                    <li><a href="#" class="lean-x-trigger">Returns</a></li>
+                    <li><a href="#" class="lean-x-trigger">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 VOLT Streetwear. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

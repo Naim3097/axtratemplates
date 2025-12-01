@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Future | BOLD. Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BOLD.</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="btn btn-primary lean-x-trigger">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <header class="project-hero">
+        <div class="container">
+            <h1 class="project-hero-title">Neon Future</h1>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Client</span>
+                    <span class="meta-value">CyberCorp Inc.</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Date</span>
+                    <span class="meta-value">October 2023</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Branding & UI</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Image -->
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Neon Future Main" class="project-main-image">
+    </div>
+
+    <!-- Project Content -->
+    <section class="section">
+        <div class="container">
+            <div class="project-content-grid">
+                
+                <!-- Sidebar / Tabs -->
+                <div class="project-sidebar">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="process">Process</button>
+                        <button class="tab-btn" data-tab="results">Results</button>
+                    </div>
+                </div>
+
+                <!-- Content Area -->
+                <div class="project-details">
+                    
+                    <!-- Overview Tab -->
+                    <div id="overview" class="tab-content active">
+                        <h2 class="content-title">The Challenge</h2>
+                        <p>CyberCorp needed a complete rebrand to match their futuristic vision. They wanted a visual identity that screamed innovation, speed, and reliability. The challenge was to balance the "cyberpunk" aesthetic with corporate professionalism.</p>
+                        <p>We focused on high-contrast colors, sharp typography, and a modular design system that could scale across their various digital products.</p>
+                    </div>
+
+                    <!-- Process Tab -->
+                    <div id="process" class="tab-content">
+                        <h2 class="content-title">Our Approach</h2>
+                        <p>We started with deep research into the tech sector's visual landscape. We found that most competitors were using safe blues and greys. We decided to go bold with neon accents and dark backgrounds.</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem; color: #A3A3A3;">
+                            <li>Stakeholder Interviews</li>
+                            <li>Visual Competitor Analysis</li>
+                            <li>Moodboarding & Concept Development</li>
+                            <li>Iterative Design Sprints</li>
+                        </ul>
+                    </div>
+
+                    <!-- Results Tab -->
+                    <div id="results" class="tab-content">
+                        <h2 class="content-title">The Impact</h2>
+                        <p>The new brand identity was launched to critical acclaim. User engagement on their platform increased by 40% in the first month.</p>
+                        <div class="stats-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;">
+                            <div class="stat-box" style="background: #262626; padding: 1.5rem; border: 1px solid #333;">
+                                <h3 style="color: #FACC15; font-size: 2rem; margin-bottom: 0.5rem;">+40%</h3>
+                                <p style="font-size: 0.9rem;">User Engagement</p>
+                            </div>
+                            <div class="stat-box" style="background: #262626; padding: 1.5rem; border: 1px solid #333;">
+                                <h3 style="color: #FACC15; font-size: 2rem; margin-bottom: 0.5rem;">2x</h3>
+                                <p style="font-size: 0.9rem;">Lead Generation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="project-grid">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 1">
+                </div>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 2">
+                </div>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="section text-center">
+        <div class="container">
+            <p class="text-muted">Next Project</p>
+            <h2 class="section-title"><a href="project.html" style="text-decoration: none; color: #fff;">Urban Architecture</a></h2>
+            <a href="work.html" class="btn btn-outline">Back to Work</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo">BOLD.</a>
+                <p>Designing the future, one pixel at a time.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@boldportfolio.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BOLD Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

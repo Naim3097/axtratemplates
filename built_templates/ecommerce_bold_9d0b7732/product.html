@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Haze Dress | VIOLET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VIOLET.</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Lookbook</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">About</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="container" style="padding-top: 2rem; padding-bottom: 1rem;">
+        <p style="color: var(--color-text-muted); font-size: 0.9rem;">
+            <a href="index.html" style="color: var(--color-text-muted);">Home</a> / 
+            <a href="shop.html" style="color: var(--color-text-muted);">Shop</a> / 
+            <span style="color: var(--color-accent);">Purple Haze Dress</span>
+        </p>
+    </div>
+
+    <!-- Product Details -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container product-detail">
+            <!-- Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Purple Haze Dress" id="main-img">
+                </div>
+                <div class="thumbnails">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Thumb 1" class="thumb active" onclick="document.getElementById('main-img').src=this.src">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Thumb 2" class="thumb" onclick="document.getElementById('main-img').src=this.src">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0815a046baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Thumb 3" class="thumb" onclick="document.getElementById('main-img').src=this.src">
+                    <img src="https://images.unsplash.com/photo-1542272617-08f086302542?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Thumb 4" class="thumb" onclick="document.getElementById('main-img').src=this.src">
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="product-info-detail">
+                <h1 style="font-family: 'Anton', sans-serif; font-size: 3rem; margin-bottom: 0.5rem; line-height: 1.1;">Purple Haze Dress</h1>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <span style="font-size: 1.5rem; color: var(--color-accent); font-weight: 700;">$89.00</span>
+                    <div style="color: #FFD700;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span style="color: var(--color-text-muted); font-size: 0.9rem; margin-left: 0.5rem;">(42 reviews)</span>
+                    </div>
+                </div>
+
+                <p style="margin-bottom: 2rem; line-height: 1.6; color: var(--color-text-muted);">
+                    Stand out from the crowd with this stunning purple dress. Made from premium silk blend fabric, it features a flattering cut that accentuates your silhouette. Perfect for evening events or a bold daytime look.
+                </p>
+
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Color</h4>
+                    <div style="display: flex; gap: 1rem;">
+                        <div style="width: 30px; height: 30px; background: #A855F7; border: 2px solid #fff; border-radius: 50%; cursor: pointer;"></div>
+                        <div style="width: 30px; height: 30px; background: #000; border: 2px solid var(--color-text-muted); border-radius: 50%; cursor: pointer;"></div>
+                        <div style="width: 30px; height: 30px; background: #fff; border: 2px solid var(--color-text-muted); border-radius: 50%; cursor: pointer;"></div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Size</h4>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">XS</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">S</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">M</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">L</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">XL</button>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+                    <input type="number" value="1" min="1" style="width: 60px; padding: 0.5rem; background: var(--color-surface); border: 1px solid var(--color-accent); color: var(--color-text); text-align: center;">
+                    <button class="btn lean-x-trigger" style="flex: 1;">Add to Cart</button>
+                    <button class="btn btn-outline lean-x-trigger"><i class="far fa-heart"></i></button>
+                </div>
+
+                <!-- Accordion -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Product Details <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <p>Material: 80% Silk, 20% Polyester<br>
+                            Care: Dry clean only<br>
+                            Model is 5'9" and wears size S.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Shipping & Returns <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <p>Free shipping on orders over $50. Returns accepted within 30 days of delivery. Items must be unworn and with original tags.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section bg-surface">
+        <div class="container">
+            <h2 class="section-title text-center">You May Also Like</h2>
+            <div class="product-grid">
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Graphic Tee</h3>
+                        <span class="product-price">$35.00</span>
+                        <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                    </div>
+                </article>
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0815a046baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Urban Hoodie</h3>
+                        <span class="product-price">$65.00</span>
+                        <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                    </div>
+                </article>
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272617-08f086302542?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cargo Pants</h3>
+                        <span class="product-price">$75.00</span>
+                        <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">VIOLET.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Bold style for the modern era.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">Men</a></li>
+                    <li><a href="shop.html">Women</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">About Us</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 VIOLET Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

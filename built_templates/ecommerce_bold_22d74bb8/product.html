@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Oversized Tee | Bold Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        @media (max-width: 768px) {
+            .product-detail {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        .product-gallery {
+            display: grid;
+            gap: 1rem;
+        }
+        .main-image {
+            width: 100%;
+            height: 500px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: #444;
+        }
+        .thumb-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .thumb {
+            height: 100px;
+            background: #222;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #444;
+            border: 2px solid transparent;
+        }
+        .thumb:hover, .thumb.active {
+            border-color: var(--color-primary);
+        }
+        .product-meta {
+            margin-bottom: 2rem;
+        }
+        .price {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin: 1rem 0;
+        }
+        .option-group {
+            margin-bottom: 1.5rem;
+        }
+        .option-label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .size-btn {
+            background: transparent;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            transition: all 0.3s;
+        }
+        .size-btn:hover, .size-btn.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+        .qty-input {
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 0.5rem;
+            width: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;"><i class="fas fa-bolt"></i> BOLD.</a>
+            </div>
+            
+            <nav class="nav__menu">
+                <div class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </div>
+                <div class="nav__item">
+                    <a href="shop.html" class="nav__link active">Shop</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Contact</a>
+                </div>
+            </nav>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="cart.html" style="color: #fff; font-size: 1.2rem;"><i class="fas fa-shopping-cart"></i></a>
+                <a href="cart.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Checkout</a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Collections</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div style="background: #222; padding: 1rem 0;">
+        <div class="container">
+            <a href="index.html" style="color: #888; text-decoration: none;">Home</a> <span style="color: #555;">/</span> 
+            <a href="shop.html" style="color: #888; text-decoration: none;">Shop</a> <span style="color: #555;">/</span> 
+            <span style="color: #fff;">Urban Oversized Tee</span>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="product-detail">
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="thumb-grid">
+                        <div class="thumb active"><i class="fas fa-tshirt"></i></div>
+                        <div class="thumb"><i class="fas fa-tshirt" style="transform: scaleX(-1);"></i></div>
+                        <div class="thumb"><i class="fas fa-search-plus"></i></div>
+                        <div class="thumb"><i class="fas fa-video"></i></div>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="product-info-col">
+                    <h1 style="margin-bottom: 0.5rem;">Urban Oversized Tee</h1>
+                    <div style="color: var(--color-accent); margin-bottom: 1rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span style="color: #888; margin-left: 0.5rem;">(42 Reviews)</span>
+                    </div>
+                    <div class="price">$45.00</div>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem;">
+                        The ultimate staple for your streetwear collection. Made from 100% organic cotton with a heavyweight feel. Features a relaxed, boxy fit and dropped shoulders.
+                    </p>
+
+                    <div class="option-group">
+                        <span class="option-label">Color: Black</span>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <div style="width: 30px; height: 30px; background: #000; border: 2px solid #fff; cursor: pointer;"></div>
+                            <div style="width: 30px; height: 30px; background: #fff; cursor: pointer;"></div>
+                            <div style="width: 30px; height: 30px; background: #555; cursor: pointer;"></div>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <span class="option-label">Size</span>
+                        <div>
+                            <button class="size-btn">S</button>
+                            <button class="size-btn active">M</button>
+                            <button class="size-btn">L</button>
+                            <button class="size-btn">XL</button>
+                        </div>
+                    </div>
+
+                    <div class="option-group" style="display: flex; gap: 1rem; align-items: flex-end;">
+                        <div>
+                            <span class="option-label">Quantity</span>
+                            <input type="number" value="1" class="qty-input">
+                        </div>
+                        <button class="btn" style="flex-grow: 1;">Add to Cart</button>
+                        <button class="btn btn--outline"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <div style="margin-top: 2rem; border-top: 1px solid #333; padding-top: 1rem; font-size: 0.9rem; color: #888;">
+                        <div><i class="fas fa-truck" style="width: 20px;"></i> Free shipping on orders over $100</div>
+                        <div style="margin-top: 0.5rem;"><i class="fas fa-undo" style="width: 20px;"></i> 30-day return policy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab-header">
+                    <div class="tab-btn active" data-tab="desc">Description</div>
+                    <div class="tab-btn" data-tab="details">Details</div>
+                    <div class="tab-btn" data-tab="reviews">Reviews (42)</div>
+                </div>
+                <div class="tab-content active" id="desc">
+                    <h3>Product Description</h3>
+                    <p>Elevate your everyday style with our Urban Oversized Tee. Crafted for those who appreciate the finer details, this t-shirt combines comfort with a bold aesthetic. The heavyweight cotton fabric ensures the shirt holds its shape, while the garment-dye process gives it a unique, lived-in look from day one.</p>
+                    <p>Perfect for layering or wearing on its own, this tee is versatile enough for any occasion.</p>
+                </div>
+                <div class="tab-content" id="details">
+                    <h3>Material & Care</h3>
+                    <ul>
+                        <li>100% Organic Cotton</li>
+                        <li>Heavyweight 240gsm jersey</li>
+                        <li>Machine wash cold, tumble dry low</li>
+                        <li>Made in Portugal</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="test-card" style="margin-bottom: 1rem;">
+                        <div style="color: var(--color-accent); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>Best tee I own</h4>
+                        <p>"The fit is exactly what I was looking for. Boxy but not sloppy. Will buy more colors."</p>
+                        <div style="color: #666; font-size: 0.8rem; margin-top: 0.5rem;">- John D.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div style="margin-top: 5rem;">
+                <h2 style="margin-bottom: 2rem;">You May Also Like</h2>
+                <div class="product-grid" style="grid-template-columns: repeat(4, 1fr);">
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img"><i class="fas fa-shoe-prints"></i></div>
+                        <div class="product-info">
+                            <h3 class="product-title">Street Runners</h3>
+                            <div class="product-price">$120.00</div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img"><i class="fas fa-hat-cowboy"></i></div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wide Brim Hat</h3>
+                            <div class="product-price">$35.00</div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img"><i class="fas fa-glasses"></i></div>
+                        <div class="product-info">
+                            <h3 class="product-title">Retro Shades</h3>
+                            <div class="product-price">$25.00</div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-img"><i class="fas fa-socks"></i></div>
+                        <div class="product-info">
+                            <h3 class="product-title">Graphic Socks</h3>
+                            <div class="product-price">$15.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem;">BOLD.</div>
+                    <p style="color: #888;">Redefining fashion for the modern era.</p>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Bold Fashion. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

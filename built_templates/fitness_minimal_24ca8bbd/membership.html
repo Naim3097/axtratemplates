@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans | Minimal Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .pricing-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--color-primary);
+        }
+        .pricing-card.featured {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+            transform: scale(1.05);
+        }
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        .pricing-card.featured h3, 
+        .pricing-card.featured .price,
+        .pricing-card.featured li {
+            color: #fff;
+        }
+        .pricing-card.featured .btn {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+        .pricing-card.featured .btn:hover {
+            background: transparent;
+            color: #fff;
+        }
+        .plan-name {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .price {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: var(--color-primary);
+        }
+        .price span {
+            font-size: 1rem;
+            font-family: var(--font-body);
+            color: #888;
+        }
+        .features-list {
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+        .features-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .features-list li i {
+            color: var(--color-primary);
+        }
+        .pricing-card.featured .features-list li i {
+            color: #fff;
+        }
+        .badge {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background: var(--color-primary);
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        .pricing-card.featured .badge {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">ZENITH.</a>
+            </div>
+            
+            <nav class="nav__menu">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="classes.html" class="nav__link">Classes</a>
+                <a href="membership.html" class="nav__link active">Membership</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+            </nav>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="#" class="btn btn--outline" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Member Login</a>
+                <a href="membership.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Join Now</a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Member Login</a>
+    </div>
+
+    <!-- Page Header -->
+    <div style="background: #f5f5f5; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1>Invest In Yourself</h1>
+            <p style="color: var(--color-text-muted);">Simple, transparent pricing. No hidden fees.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card reveal">
+                    <span class="plan-name">Basic</span>
+                    <div class="price">$49<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Access to gym floor</li>
+                        <li><i class="fas fa-check"></i> Locker room access</li>
+                        <li><i class="fas fa-check"></i> 1 Guest pass per month</li>
+                        <li style="color: #ccc; text-decoration: line-through;"><i class="fas fa-times" style="color: #ccc;"></i> Group classes</li>
+                        <li style="color: #ccc; text-decoration: line-through;"><i class="fas fa-times" style="color: #ccc;"></i> Personal training</li>
+                    </ul>
+                    <a href="#" class="btn btn--outline" style="width: 100%;">Choose Basic</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured reveal">
+                    <div class="badge">Most Popular</div>
+                    <span class="plan-name">Pro</span>
+                    <div class="price">$89<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Access to gym floor</li>
+                        <li><i class="fas fa-check"></i> Locker room access</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> Sauna & Steam room</li>
+                        <li><i class="fas fa-check"></i> 5 Guest passes per month</li>
+                    </ul>
+                    <a href="#" class="btn" style="width: 100%;">Choose Pro</a>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="pricing-card reveal">
+                    <span class="plan-name">Elite</span>
+                    <div class="price">$149<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> All Pro features</li>
+                        <li><i class="fas fa-check"></i> 2 Personal training sessions</li>
+                        <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                        <li><i class="fas fa-check"></i> Priority booking</li>
+                        <li><i class="fas fa-check"></i> Unlimited guest passes</li>
+                    </ul>
+                    <a href="#" class="btn btn--outline" style="width: 100%;">Choose Elite</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; text-align: center;">
+                <h3>Corporate Wellness?</h3>
+                <p style="margin-bottom: 2rem; color: var(--color-text-muted);">We offer special rates for teams of 10 or more.</p>
+                <a href="contact.html" class="btn btn--outline">Contact Sales</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: #fafafa;">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-4">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <h4 style="margin-bottom: 0.5rem;">Is there a joining fee?</h4>
+                <p style="color: var(--color-text-muted);">No, we believe in transparency. The price you see is the price you pay.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="margin-bottom: 0.5rem;">Can I freeze my membership?</h4>
+                <p style="color: var(--color-text-muted);">Yes, you can freeze your membership for up to 3 months per year for medical or travel reasons.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="margin-bottom: 0.5rem;">What is the cancellation policy?</h4>
+                <p style="color: var(--color-text-muted);">We require a 30-day notice for all cancellations. No long-term contracts required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem; color: #fff;">ZENITH.</div>
+                    <p style="color: #aaa;">Elevating fitness to an art form.</p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Email Address">
+                        <button type="submit" class="btn" style="padding: 0.8rem; border-color: #fff; background: #fff; color: #000;">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Zenith Fitness. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

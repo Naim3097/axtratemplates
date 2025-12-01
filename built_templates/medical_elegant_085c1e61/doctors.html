@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors | Aura Medical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Aura.</a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown">
+                        <a href="services.html#cardiology">Cardiology</a>
+                        <a href="services.html#neurology">Neurology</a>
+                        <a href="services.html#pediatrics">Pediatrics</a>
+                        <a href="services.html#dermatology">Dermatology</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="doctors.html" class="nav-link">Doctors</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <a href="#" class="btn">Patient Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: #f9f9f9; padding: 4rem 0;">
+        <div class="container" style="text-align: center;">
+            <h1>Meet Our Specialists</h1>
+            <p style="max-width: 600px; margin: 0 auto;">A team of world-class medical professionals dedicated to your health and well-being.</p>
+        </div>
+    </section>
+
+    <!-- Doctors Grid -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Specialists</button>
+                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+                <button class="filter-btn" data-filter="neurology">Neurology</button>
+                <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+                <button class="filter-btn" data-filter="dermatology">Dermatology</button>
+            </div>
+
+            <div class="grid-3">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-category="cardiology">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dr. James Wilson" class="doctor-img">
+                    <h3>Dr. James Wilson</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Chief Cardiologist</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Specializes in interventional cardiology and heart failure management with over 15 years of experience.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="#" style="color: #333;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-category="neurology">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dr. Sarah Jenkins" class="doctor-img">
+                    <h3>Dr. Sarah Jenkins</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Neurologist</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Expert in treating complex neurological disorders including epilepsy and multiple sclerosis.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="#" style="color: #333;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-category="pediatrics">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dr. Michael Ross" class="doctor-img">
+                    <h3>Dr. Michael Ross</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Pediatrician</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Dedicated to providing compassionate care for children of all ages, from newborns to adolescents.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="#" style="color: #333;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="doctor-card" data-category="dermatology">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dr. Emily White" class="doctor-img">
+                    <h3>Dr. Emily White</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Dermatologist</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Specializes in both medical and cosmetic dermatology, helping patients achieve healthy, beautiful skin.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="#" style="color: #333;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="doctor-card" data-category="cardiology">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dr. David Chen" class="doctor-img">
+                    <h3>Dr. David Chen</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Cardiologist</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Focuses on preventative cardiology and non-invasive diagnostic techniques.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="#" style="color: #333;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="doctor-card" data-category="pediatrics">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dr. Lisa Thompson" class="doctor-img">
+                    <h3>Dr. Lisa Thompson</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Pediatric Surgeon</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Highly skilled in pediatric surgical procedures with a gentle, reassuring approach.</p>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="#" style="color: #333;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="color: #fff; margin-bottom: 1rem; display: inline-block;">Aura.</a>
+                    <p style="color: #999;">Providing elegant, world-class healthcare solutions for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="doctors.html">Doctors</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <a href="services.html">Cardiology</a>
+                    <a href="services.html">Neurology</a>
+                    <a href="services.html">Pediatrics</a>
+                    <a href="services.html">Dermatology</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p style="color: #999; margin-bottom: 0.5rem;">123 Medical Center Dr</p>
+                    <p style="color: #999; margin-bottom: 0.5rem;">New York, NY 10001</p>
+                    <p style="color: #999; margin-bottom: 0.5rem;">+1 (555) 123-4567</p>
+                    <p style="color: #999;">info@auramedical.com</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; margin-top: 4rem; padding-top: 2rem; text-align: center; color: #666;">
+                <p>&copy; 2023 Aura Medical. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Flavors | Elegant Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__links-left">
+                <a href="index.html" class="nav__link active">Home</a>
+                <a href="menu.html" class="nav__link">Menu</a>
+            </div>
+            
+            <div class="nav__logo">
+                NOIR.
+            </div>
+            
+            <div class="nav__links-right">
+                <a href="about.html" class="nav__link">Story</a>
+                <a href="reservations.html" class="nav__link">Book</a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Story</a>
+        <a href="reservations.html">Reservations</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Fine Dining" class="hero__bg">
+        <div class="hero__content">
+            <h1>Authentic Flavors,<br>Modern Twist</h1>
+            <p>Fresh ingredients sourced locally every day. Experience culinary excellence in an atmosphere of refined elegance.</p>
+            <a href="reservations.html" class="btn">Book a Table</a>
+        </div>
+    </section>
+
+    <!-- Features (Grid 3) -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>The Experience</h2>
+                <p style="color: var(--color-text-muted);">More than just a meal.</p>
+            </div>
+            <div class="feat-grid-3">
+                <div class="feat-card">
+                    <div class="feat-icon"><i class="fas fa-wine-glass-alt"></i></div>
+                    <h3>Curated Wine List</h3>
+                    <p style="color: var(--color-text-muted);">A selection of over 200 vintage wines from the world's most renowned vineyards, handpicked by our sommelier.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="feat-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Farm to Table</h3>
+                    <p style="color: var(--color-text-muted);">We partner with local farmers to bring you the freshest seasonal ingredients, supporting our community and your health.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="feat-icon"><i class="fas fa-music"></i></div>
+                    <h3>Live Jazz</h3>
+                    <p style="color: var(--color-text-muted);">Enjoy the soothing sounds of live jazz every Friday and Saturday evening, creating the perfect ambiance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dish (Split Layout) -->
+    <section class="section" style="background-color: #fff;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Signature Dish" style="width: 100%; height: 500px; object-fit: cover;">
+                </div>
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">Signature Dish:<br>The Black Truffle Risotto</h2>
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem;">Creamy arborio rice slow-cooked with aged parmesan, wild mushrooms, and freshly shaved black truffles. A dish that defines our commitment to flavor and luxury.</p>
+                    <a href="menu.html" class="btn btn--outline">View Full Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Slider) -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Critics' Reviews</h2>
+            </div>
+            <div class="test-slider">
+                <div class="test-slide">
+                    <p class="test-quote">"A culinary masterpiece. Every dish tells a story, and the service is impeccable. Noir has set a new standard for fine dining in the city."</p>
+                    <div class="test-author">- The Gourmet Gazette</div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #000; border-radius: 50%; margin: 0 5px;"></span>
+                <span style="display: inline-block; width: 10px; height: 10px; background: #ccc; border-radius: 50%; margin: 0 5px;"></span>
+                <span style="display: inline-block; width: 10px; height: 10px; background: #ccc; border-radius: 50%; margin: 0 5px;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Newsletter -->
+    <section class="section" style="background-color: #000; color: #fff; text-align: center;">
+        <div class="container">
+            <h2 style="color: #fff;">Join Our Exclusive Club</h2>
+            <p style="color: #aaa; max-width: 600px; margin: 0 auto 2rem;">Receive invitations to private tasting events and seasonal menu previews.</p>
+            <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 0.5rem;">
+                <input type="email" placeholder="Your Email Address" style="flex-grow: 1; padding: 1rem; border: none;">
+                <button type="submit" class="btn" style="background: #fff; color: #000; border-color: #fff;">Join</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem; color: #fff; text-align: left;">NOIR.</div>
+                    <p style="color: #aaa;">123 Culinary Ave, Metropolis<br>(555) 987-6543</p>
+                </div>
+                <div>
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">Story</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Mon-Thu: 5pm - 10pm</li>
+                        <li>Fri-Sat: 5pm - 11pm</li>
+                        <li>Sun: 4pm - 9pm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Noir Restaurant. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

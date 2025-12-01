@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | VIOLET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VIOLET.</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Lookbook</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">About</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Shop All</h1>
+                <p class="hero-subtitle">Explore our latest collection.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section class="section">
+        <div class="container shop-layout">
+            <!-- Sidebar -->
+            <aside class="shop-sidebar">
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <ul class="filter-list">
+                        <li><a href="#" class="lean-x-trigger">All Products</a></li>
+                        <li><a href="#" class="lean-x-trigger">New Arrivals</a></li>
+                        <li><a href="#" class="lean-x-trigger">Tops</a></li>
+                        <li><a href="#" class="lean-x-trigger">Bottoms</a></li>
+                        <li><a href="#" class="lean-x-trigger">Dresses</a></li>
+                        <li><a href="#" class="lean-x-trigger">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price</h3>
+                    <ul class="filter-list">
+                        <li><a href="#" class="lean-x-trigger">Under $50</a></li>
+                        <li><a href="#" class="lean-x-trigger">$50 - $100</a></li>
+                        <li><a href="#" class="lean-x-trigger">$100 - $200</a></li>
+                        <li><a href="#" class="lean-x-trigger">Over $200</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Size</h3>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">XS</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">S</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">M</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">L</button>
+                        <button class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">XL</button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="shop-main">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <p>Showing 1-9 of 24 results</p>
+                    <select style="background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-accent); padding: 0.5rem;">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest</option>
+                    </select>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 1">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Purple Haze Dress</h3>
+                            <span class="product-price">$89.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Graphic Tee</h3>
+                            <span class="product-price">$35.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1503342217505-b0815a046baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 3">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Urban Hoodie</h3>
+                            <span class="product-price">$65.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1542272617-08f086302542?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 4">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Cargo Pants</h3>
+                            <span class="product-price">$75.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 5">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Street Sneakers</h3>
+                            <span class="product-price">$95.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 6">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Oversized Shirt</h3>
+                            <span class="product-price">$50.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 7">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Black Denim Jacket</h3>
+                            <span class="product-price">$110.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 8">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Active Leggings</h3>
+                            <span class="product-price">$45.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 9 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 9">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Basic Tee</h3>
+                            <span class="product-price">$25.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 4rem;">
+                    <a href="#" class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">&laquo;</a>
+                    <a href="#" class="btn lean-x-trigger" style="padding: 0.5rem 1rem;">1</a>
+                    <a href="#" class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">2</a>
+                    <a href="#" class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">3</a>
+                    <a href="#" class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1rem;">&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">VIOLET.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Bold style for the modern era.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">Men</a></li>
+                    <li><a href="shop.html">Women</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">About Us</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 VIOLET Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

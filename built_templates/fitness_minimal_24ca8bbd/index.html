@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Inner Peace | Minimal Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__logo">
+                ZENITH.
+            </div>
+            
+            <nav class="nav__menu">
+                <a href="index.html" class="nav__link active">Home</a>
+                <a href="classes.html" class="nav__link">Classes</a>
+                <a href="membership.html" class="nav__link">Membership</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+            </nav>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="#" class="btn btn--outline" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Member Login</a>
+                <a href="membership.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Join Now</a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Member Login</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Placeholder for Parallax Background -->
+        <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); opacity: 0.1;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2; width: 100%;">
+            <div class="hero__content reveal">
+                <h1>Find Your Inner Peace</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Start your 30-day challenge today. Transform your body and mind with our holistic approach to fitness.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="membership.html" class="btn">Start Free Trial</a>
+                    <a href="classes.html" class="btn btn--outline">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features (Grid 3) -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4 reveal">
+                <h2>Holistic Wellness</h2>
+                <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">We believe in a balanced approach to health, combining strength, flexibility, and mindfulness.</p>
+            </div>
+            <div class="feat-grid-3">
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Strength Training</h3>
+                    <p style="color: var(--color-text-muted);">Build lean muscle with our state-of-the-art equipment and expert guidance.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Mindfulness</h3>
+                    <p style="color: var(--color-text-muted);">Reduce stress and improve focus with our guided meditation and yoga sessions.</p>
+                </div>
+                <div class="feat-card reveal">
+                    <div class="feat-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Cardio Health</h3>
+                    <p style="color: var(--color-text-muted);">Boost your endurance with high-intensity interval training and spin classes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers / Team -->
+    <section class="section" style="background-color: #fff;">
+        <div class="container">
+            <div class="text-center mb-4 reveal">
+                <h2>Expert Trainers</h2>
+                <p style="color: var(--color-text-muted);">Guided by the best in the industry.</p>
+            </div>
+            <div class="feat-grid-3">
+                <div class="feat-card reveal" style="text-align: center;">
+                    <div style="height: 300px; background: #eee; margin-bottom: 1.5rem; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Trainer" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.3s;">
+                    </div>
+                    <h3>Sarah Jenkins</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Yoga & Pilates</p>
+                </div>
+                <div class="feat-card reveal" style="text-align: center;">
+                    <div style="height: 300px; background: #eee; margin-bottom: 1.5rem; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Trainer" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.3s;">
+                    </div>
+                    <h3>Marcus Thorne</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">HIIT & Strength</p>
+                </div>
+                <div class="feat-card reveal" style="text-align: center;">
+                    <div style="height: 300px; background: #eee; margin-bottom: 1.5rem; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Trainer" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.3s;">
+                    </div>
+                    <h3>Elena Rodriguez</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Nutrition Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Masonry) -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4 reveal">
+                <h2>Success Stories</h2>
+            </div>
+            <div class="masonry-grid">
+                <div class="test-card reveal">
+                    <p class="test-quote">"Zenith changed my life. I've never felt stronger or more centered. The community here is incredibly supportive."</p>
+                    <div class="test-author">- Jessica M.</div>
+                </div>
+                <div class="test-card reveal">
+                    <p class="test-quote">"The facilities are top-notch and always clean. I love the variety of classes available."</p>
+                    <div class="test-author">- David K.</div>
+                </div>
+                <div class="test-card reveal">
+                    <p class="test-quote">"I was intimidated at first, but the trainers made me feel welcome immediately. Highly recommend the 30-day challenge."</p>
+                    <div class="test-author">- Amanda L.</div>
+                </div>
+                <div class="test-card reveal">
+                    <p class="test-quote">"Yoga classes with Sarah are the highlight of my week. Perfect way to decompress."</p>
+                    <div class="test-author">- Robert P.</div>
+                </div>
+                <div class="test-card reveal">
+                    <p class="test-quote">"Great value for the price. The equipment is modern and well-maintained."</p>
+                    <div class="test-author">- Chris T.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: #000; color: #fff; text-align: center;">
+        <div class="container reveal">
+            <h2 style="color: #fff;">Ready to Transform?</h2>
+            <p style="color: #aaa; max-width: 600px; margin: 0 auto 2rem;">Join thousands of others who have found their path to wellness.</p>
+            <a href="membership.html" class="btn" style="background: #fff; color: #000; border-color: #fff;">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem; color: #fff;">ZENITH.</div>
+                    <p style="color: #aaa;">Elevating fitness to an art form.</p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Email Address">
+                        <button type="submit" class="btn" style="padding: 0.8rem; border-color: #fff; background: #fff; color: #000;">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Zenith Fitness. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

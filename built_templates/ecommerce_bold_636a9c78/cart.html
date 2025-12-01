@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | NEON ROSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">NEON ROSE.</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Collections</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">About</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Header -->
+    <header class="hero" style="min-height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Cart</h1>
+                <p class="hero-subtitle">Review your bold picks.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 350px; gap: 4rem; align-items: start;">
+                
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div style="display: flex; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Product 1" style="width: 120px; height: 150px; object-fit: cover; border: 1px solid #fff;">
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <h3 style="font-size: 1.2rem;">Neon Bomber</h3>
+                                <span style="font-weight: bold;">$120.00</span>
+                            </div>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Size: S | Color: Neon Pink</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">-</button>
+                                    <input type="text" value="1" style="width: 40px; text-align: center; background: transparent; border: none; color: #fff;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">+</button>
+                                </div>
+                                <button style="background: transparent; border: none; color: var(--color-text-muted); cursor: pointer; text-decoration: underline;">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div style="display: flex; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Product 2" style="width: 120px; height: 150px; object-fit: cover; border: 1px solid #fff;">
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <h3 style="font-size: 1.2rem;">Graphic Tee</h3>
+                                <span style="font-weight: bold;">$45.00</span>
+                            </div>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Size: M | Color: Black</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">-</button>
+                                    <input type="text" value="1" style="width: 40px; text-align: center; background: transparent; border: none; color: #fff;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">+</button>
+                                </div>
+                                <button style="background: transparent; border: none; color: var(--color-text-muted); cursor: pointer; text-decoration: underline;">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="cart-summary" style="background: var(--color-surface); padding: 2rem; border: 1px solid rgba(255,255,255,0.1); position: sticky; top: 2rem;">
+                    <h3 style="margin-bottom: 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: inline-block;">Order Summary</h3>
+                    
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="color: var(--color-text-muted);">Subtotal</span>
+                        <span>$165.00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="color: var(--color-text-muted);">Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem; font-size: 1.2rem; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                        <span>Total</span>
+                        <span style="color: var(--color-primary);">$165.00</span>
+                    </div>
+
+                    <button class="btn btn-block">Proceed to Checkout</button>
+                    
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">We accept</p>
+                        <div style="font-size: 1.5rem; color: #fff; display: flex; justify-content: center; gap: 1rem;">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">NEON ROSE.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Bold fashion for the bold generation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">New Arrivals</a></li>
+                    <li><a href="shop.html">Best Sellers</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">About Us</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 NEON ROSE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

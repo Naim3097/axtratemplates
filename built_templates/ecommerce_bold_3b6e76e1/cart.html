@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | URBAN THREADS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <button class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">URBAN<br>THREADS</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="shop.html" class="nav-link"><i class="fas fa-tshirt"></i> Shop</a>
+                <a href="cart.html" class="nav-link active"><i class="fas fa-shopping-cart"></i> Cart (2)</a>
+                <a href="#" class="nav-link lean-x-trigger"><i class="fas fa-user"></i> Account</a>
+                <a href="#" class="nav-link lean-x-trigger"><i class="fas fa-search"></i> Search</a>
+            </div>
+            
+            <div style="margin-top: auto; padding-top: 2rem; border-top: 1px solid #333;">
+                <p style="color: #666; font-size: 0.8rem;">&copy; 2025 Urban Threads.</p>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <section class="section" style="padding-top: 2rem;">
+                <div class="container">
+                    <h1 style="margin-bottom: 2rem;">Your Cart</h1>
+
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                        
+                        <!-- Cart Items -->
+                        <div>
+                            <div style="border-bottom: 1px solid #333; padding-bottom: 1rem; margin-bottom: 2rem;">
+                                <div style="display: grid; grid-template-columns: 100px 1fr auto auto; gap: 2rem; align-items: center;">
+                                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Product" style="width: 100%; border: 1px solid #333;">
+                                    <div>
+                                        <h3 style="margin-bottom: 0.5rem;"><a href="product.html" style="color: #fff; text-decoration: none;">Essential Tee</a></h3>
+                                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Size: M</p>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <button class="btn btn--outline" style="padding: 0.2rem 0.5rem;">-</button>
+                                        <span>1</span>
+                                        <button class="btn btn--outline" style="padding: 0.2rem 0.5rem;">+</button>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <p style="color: var(--color-primary); font-weight: bold;">$45.00</p>
+                                        <button style="background: none; border: none; color: #666; cursor: pointer; margin-top: 0.5rem;"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="border-bottom: 1px solid #333; padding-bottom: 1rem; margin-bottom: 2rem;">
+                                <div style="display: grid; grid-template-columns: 100px 1fr auto auto; gap: 2rem; align-items: center;">
+                                    <img src="https://images.unsplash.com/photo-1551028919-ac66c5f8b6b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Product" style="width: 100%; border: 1px solid #333;">
+                                    <div>
+                                        <h3 style="margin-bottom: 0.5rem;"><a href="product.html" style="color: #fff; text-decoration: none;">Bomber Jacket</a></h3>
+                                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Size: L</p>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <button class="btn btn--outline" style="padding: 0.2rem 0.5rem;">-</button>
+                                        <span>1</span>
+                                        <button class="btn btn--outline" style="padding: 0.2rem 0.5rem;">+</button>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <p style="color: var(--color-primary); font-weight: bold;">$89.00</p>
+                                        <button style="background: none; border: none; color: #666; cursor: pointer; margin-top: 0.5rem;"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="shop.html" class="btn btn--outline"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div style="background: #111; padding: 2rem; border: 1px solid #333; height: fit-content;">
+                            <h2 style="margin-bottom: 1.5rem;">Order Summary</h2>
+                            
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                                <span style="color: var(--color-text-muted);">Subtotal</span>
+                                <span>$134.00</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                                <span style="color: var(--color-text-muted);">Shipping</span>
+                                <span>Calculated at checkout</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                                <span style="color: var(--color-text-muted);">Tax</span>
+                                <span>$10.72</span>
+                            </div>
+                            
+                            <div style="border-top: 1px solid #333; margin: 1.5rem 0;"></div>
+                            
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 2rem; font-size: 1.2rem; font-weight: bold;">
+                                <span>Total</span>
+                                <span style="color: var(--color-primary);">$144.72</span>
+                            </div>
+
+                            <button class="btn" style="width: 100%; margin-bottom: 1rem;">Proceed to Checkout</button>
+                            
+                            <div style="text-align: center; color: var(--color-text-muted); font-size: 0.9rem;">
+                                <p><i class="fas fa-lock"></i> Secure Checkout</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div>
+                            <h3>Urban Threads</h3>
+                            <p style="color: var(--color-text-muted);">Streetwear for the modern rebel. Designed in NYC.</p>
+                        </div>
+                        <div>
+                            <h3>Shop</h3>
+                            <ul style="list-style: none;">
+                                <li><a href="shop.html">New Arrivals</a></li>
+                                <li><a href="shop.html">Best Sellers</a></li>
+                                <li><a href="shop.html">Accessories</a></li>
+                                <li><a href="shop.html">Sale</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Help</h3>
+                            <ul style="list-style: none;">
+                                <li><a href="#" class="lean-x-trigger">Shipping Info</a></li>
+                                <li><a href="#" class="lean-x-trigger">Returns</a></li>
+                                <li><a href="#" class="lean-x-trigger">Size Guide</a></li>
+                                <li><a href="#" class="lean-x-trigger">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Social</h3>
+                            <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                                <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="lean-x-trigger"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

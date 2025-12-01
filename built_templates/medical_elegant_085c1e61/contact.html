@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aura Medical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Aura.</a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown">
+                        <a href="services.html#cardiology">Cardiology</a>
+                        <a href="services.html#neurology">Neurology</a>
+                        <a href="services.html#pediatrics">Pediatrics</a>
+                        <a href="services.html#dermatology">Dermatology</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="doctors.html" class="nav-link">Doctors</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <a href="#" class="btn">Patient Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: #f9f9f9; padding: 4rem 0;">
+        <div class="container" style="text-align: center;">
+            <h1>Get in Touch</h1>
+            <p style="max-width: 600px; margin: 0 auto;">We're here to help. Reach out to us for appointments, inquiries, or emergency assistance.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                
+                <!-- Contact Info -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Contact Information</h2>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Address</h3>
+                        <p style="color: var(--color-text-muted);">123 Medical Center Dr<br>New York, NY 10001</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Phone</h3>
+                        <p style="color: var(--color-text-muted);">Main: +1 (555) 123-4567<br>Emergency: +1 (555) 911-0000</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Email</h3>
+                        <p style="color: var(--color-text-muted);">info@auramedical.com<br>appointments@auramedical.com</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Hours</h3>
+                        <p style="color: var(--color-text-muted);">Mon - Fri: 8:00 AM - 8:00 PM<br>Sat - Sun: 9:00 AM - 5:00 PM<br>Emergency: 24/7</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div style="background: #fff; padding: 3rem; border: 1px solid #eee;">
+                    <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+                    <form>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Full Name</label>
+                            <input type="text" id="name" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: var(--font-body);">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address</label>
+                            <input type="email" id="email" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: var(--font-body);">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Subject</label>
+                            <select id="subject" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: var(--font-body); background: #fff;">
+                                <option value="">Select a subject</option>
+                                <option value="appointment">Book Appointment</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="feedback">Patient Feedback</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                            <textarea id="message" rows="5" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: var(--font-body);"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <div style="height: 400px; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #999;">
+        <p>Interactive Map Placeholder</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="color: #fff; margin-bottom: 1rem; display: inline-block;">Aura.</a>
+                    <p style="color: #999;">Providing elegant, world-class healthcare solutions for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="doctors.html">Doctors</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <a href="services.html">Cardiology</a>
+                    <a href="services.html">Neurology</a>
+                    <a href="services.html">Pediatrics</a>
+                    <a href="services.html">Dermatology</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p style="color: #999; margin-bottom: 0.5rem;">123 Medical Center Dr</p>
+                    <p style="color: #999; margin-bottom: 0.5rem;">New York, NY 10001</p>
+                    <p style="color: #999; margin-bottom: 0.5rem;">+1 (555) 123-4567</p>
+                    <p style="color: #999;">info@auramedical.com</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; margin-top: 4rem; padding-top: 2rem; text-align: center; color: #666;">
+                <p>&copy; 2023 Aura Medical. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

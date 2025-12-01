@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AGENCY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">AGENCY.</a>
+            <div class="nav__links">
+                <a href="index.html" class="nav__link">Work</a>
+                <a href="work.html" class="nav__link">Studio</a>
+                <a href="contact.html" class="nav__link active">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                
+                <!-- Info -->
+                <div>
+                    <h1 style="font-size: 4rem; margin-bottom: 2rem;">LET'S MAKE<br><span style="color: var(--color-accent);">MAGIC</span></h1>
+                    <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #aaa;">Got a project in mind? We'd love to hear about it. Fill out the form and we'll get back to you within 24 hours.</p>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Email</h3>
+                        <p>hello@agency.com</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+
+                    <div>
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Studio</h3>
+                        <p>123 Creative Blvd<br>Design District, NY 10012</p>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project" class="form-label">Project Type</label>
+                            <select id="project" class="form-input" style="background-color: var(--color-bg);">
+                                <option value="branding">Branding</option>
+                                <option value="web">Web Design</option>
+                                <option value="dev">Development</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget</label>
+                            <select id="budget" class="form-input" style="background-color: var(--color-bg);">
+                                <option value="small">$5k - $10k</option>
+                                <option value="medium">$10k - $25k</option>
+                                <option value="large">$25k - $50k</option>
+                                <option value="xl">$50k+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-textarea" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p style="color: #555;">&copy; 2025 AGENCY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

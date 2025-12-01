@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | TechInsights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">TechInsights.</a>
+            
+            <div class="nav__links">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="#" class="nav__link">Reviews</a>
+                <a href="#" class="nav__link">Tutorials</a>
+                <a href="about.html" class="nav__link active">About</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="section" style="background-color: var(--color-card-bg); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Decoding the Future</h1>
+            <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 700px; margin: 0 auto;">We are a collective of developers, designers, and tech enthusiasts dedicated to making complex technology accessible to everyone.</p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Team working">
+                </div>
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">Our Mission</h2>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">In a world where technology evolves at breakneck speed, staying informed can be overwhelming. TechInsights was born out of a desire to cut through the noise.</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">We believe in quality over quantity. Our articles are thoroughly researched, fact-checked, and written by industry experts who actually use the tools they write about.</p>
+                    <p style="font-size: 1.1rem;">Whether you're a seasoned senior engineer or just writing your first line of code, our goal is to provide you with the insights you need to grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" style="background-color: var(--color-card-bg);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Meet the Team</h2>
+            <div class="post-grid">
+                
+                <!-- Team Member 1 -->
+                <div style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Alex Chen" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
+                    <h3>Alex Chen</h3>
+                    <p style="color: var(--color-accent); margin-bottom: 1rem;">Editor in Chief</p>
+                    <p style="color: var(--color-text-muted);">Former Google engineer turned tech writer. Obsessed with clean code and mechanical keyboards.</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Sarah Jones" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
+                    <h3>Sarah Jones</h3>
+                    <p style="color: var(--color-accent); margin-bottom: 1rem;">Senior Designer</p>
+                    <p style="color: var(--color-text-muted);">UI/UX specialist with a keen eye for typography. Believes that good design is invisible.</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="David Miller" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
+                    <h3>David Miller</h3>
+                    <p style="color: var(--color-accent); margin-bottom: 1rem;">Hardware Reviewer</p>
+                    <p style="color: var(--color-text-muted);">If it has a microchip, David has probably taken it apart. Expert on all things silicon.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TechInsights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "description": "Industry-specific content to populate templates",
+    "version": "1.0"
+  },
+  "industries": [
+    {
+      "id": "ind_saas_01",
+      "name": "SaaS & Technology",
+      "description": "Software products, apps, and digital services",
+      "content": {
+        "hero": {
+          "headlines": [
+            "The Future of [Product Category] is Here",
+            "Scale Your Business with [Product Name]",
+            "Automate Your Workflow in Seconds",
+            "The All-in-One Platform for [Target Audience]"
+          ],
+          "subheadlines": [
+            "Join 10,000+ companies using our platform to drive growth and efficiency.",
+            "Stop wasting time on manual tasks. Let AI handle the heavy lifting.",
+            "Seamlessly integrate with your favorite tools. No coding required."
+          ],
+          "ctas": ["Start Free Trial", "Request Demo", "Get Started", "View Pricing"]
+        },
+        "features": [
+          { "title": "Real-time Analytics", "description": "Track your performance with live data dashboards." },
+          { "title": "Team Collaboration", "description": "Work together seamlessly with built-in commenting and sharing." },
+          { "title": "Bank-Grade Security", "description": "Your data is protected by enterprise-level encryption." },
+          { "title": "One-Click Integration", "description": "Connect with Slack, HubSpot, and Salesforce instantly." }
+        ],
+        "testimonials": [
+          { "quote": "This tool completely changed how we work. Highly recommended!", "author": "Sarah J., CTO at TechFlow" },
+          { "quote": "The ROI was immediate. We saved 20 hours a week.", "author": "Mike R., Founder of ScaleUp" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "abstract-3d-render",
+        "iconStyle": "line-gradient"
+      },
+      "preferredLayouts": ["hero_split_right", "hero_app_showcase", "feat_bento", "price_compare"]
+    },
+    {
+      "id": "ind_portfolio_01",
+      "name": "Creative Portfolio",
+      "description": "Designers, photographers, artists, and agencies",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Crafting Digital Experiences",
+            "Visual Storytelling for Brands",
+            "I Design Interfaces That Work",
+            "Hello, I'm [Name]. I Create Art."
+          ],
+          "subheadlines": [
+            "Specializing in UI/UX, branding, and motion design.",
+            "Helping visionary brands connect with their audience.",
+            "Based in New York, working globally."
+          ],
+          "ctas": ["View Work", "Contact Me", "Download Resume", "See Projects"]
+        },
+        "features": [
+          { "title": "Brand Identity", "description": "Logos, color systems, and brand guidelines." },
+          { "title": "Web Design", "description": "Responsive, accessible, and beautiful websites." },
+          { "title": "Art Direction", "description": "Guiding the visual strategy of your campaigns." }
+        ],
+        "testimonials": [
+          { "quote": "An absolute visionary. The best designer we've worked with.", "author": "Creative Director, Studio X" },
+          { "quote": "Delivered on time and exceeded all expectations.", "author": "Marketing Lead, Brand Y" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "minimal-mockup",
+        "iconStyle": "thin-stroke"
+      },
+      "preferredLayouts": ["hero_centered", "hero_minimal_text", "feat_grid_3", "test_single_focus"]
+    },
+    {
+      "id": "ind_restaurant_01",
+      "name": "Restaurant & Food",
+      "description": "Cafes, fine dining, bistros, and food delivery",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Taste the Difference",
+            "Farm to Table Excellence",
+            "Authentic Flavors, Modern Twist",
+            "The Best Burger in Town"
+          ],
+          "subheadlines": [
+            "Fresh ingredients sourced locally every day.",
+            "Experience a culinary journey like no other.",
+            "Open for breakfast, lunch, and dinner."
+          ],
+          "ctas": ["Book a Table", "Order Online", "View Menu", "Our Location"]
+        },
+        "features": [
+          { "title": "Organic Ingredients", "description": "We partner with local farmers for the freshest produce." },
+          { "title": "Private Dining", "description": "Exclusive rooms for your special events." },
+          { "title": "Craft Cocktails", "description": "Award-winning mixology at our bar." }
+        ],
+        "testimonials": [
+          { "quote": "The best pasta I've had outside of Italy.", "author": "Food Critic, City Guide" },
+          { "quote": "Atmosphere is 10/10. Perfect for date night.", "author": "Local Guide" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "high-contrast-food-photography",
+        "iconStyle": "hand-drawn"
+      },
+      "preferredLayouts": ["hero_video_bg", "hero_centered", "feat_list_alt", "test_slider"]
+    },
+    {
+      "id": "ind_medical_01",
+      "name": "Medical & Healthcare",
+      "description": "Clinics, dentists, therapists, and hospitals",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Your Health, Our Priority",
+            "Compassionate Care for You",
+            "Advanced Medicine, Human Touch",
+            "Smile with Confidence"
+          ],
+          "subheadlines": [
+            "Leading specialists in [Specialty] care.",
+            "State-of-the-art facilities and expert staff.",
+            "Accepting new patients. Same-day appointments available."
+          ],
+          "ctas": ["Book Appointment", "Our Services", "Meet the Team", "Patient Portal"]
+        },
+        "features": [
+          { "title": "Expert Doctors", "description": "Board-certified specialists with years of experience." },
+          { "title": "Modern Technology", "description": "Using the latest diagnostic tools for better outcomes." },
+          { "title": "24/7 Support", "description": "Emergency care whenever you need it." }
+        ],
+        "testimonials": [
+          { "quote": "Dr. Smith is incredibly kind and professional.", "author": "Patient Review" },
+          { "quote": "The clinic is spotless and the staff is wonderful.", "author": "Patient Review" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "clean-bright-people",
+        "iconStyle": "medical-solid"
+      },
+      "preferredLayouts": ["hero_split_left", "feat_grid_4", "foot_multi_col", "cta_simple"]
+    },
+    {
+      "id": "ind_realestate_01",
+      "name": "Real Estate & Architecture",
+      "description": "Agencies, property listings, architects",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Find Your Dream Home",
+            "Luxury Living Redefined",
+            "Architectural Masterpieces",
+            "Invest in Your Future"
+          ],
+          "subheadlines": [
+            "Browse thousands of exclusive listings in your area.",
+            "Designing spaces that inspire and endure.",
+            "Your trusted partner in property management."
+          ],
+          "ctas": ["View Listings", "Contact Agent", "Schedule Viewing", "Sell Your Home"]
+        },
+        "features": [
+          { "title": "Prime Locations", "description": "Properties in the most sought-after neighborhoods." },
+          { "title": "Virtual Tours", "description": "Explore homes from the comfort of your couch." },
+          { "title": "Expert Valuation", "description": "Get an accurate estimate of your property's worth." }
+        ],
+        "testimonials": [
+          { "quote": "Found our forever home in less than a week!", "author": "Happy Homeowner" },
+          { "quote": "Professional, knowledgeable, and easy to work with.", "author": "Property Investor" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "wide-angle-interior",
+        "iconStyle": "thin-outline"
+      },
+      "preferredLayouts": ["hero_video_bg", "feat_grid_3", "test_grid_masonry", "cta_floating"]
+    },
+    {
+      "id": "ind_fitness_01",
+      "name": "Fitness & Wellness",
+      "description": "Gyms, yoga studios, personal trainers",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Transform Your Body",
+            "Find Your Inner Peace",
+            "Train Like a Pro",
+            "Wellness for Everyone"
+          ],
+          "subheadlines": [
+            "Join the community that motivates you to reach your goals.",
+            "Holistic approaches to health and mindfulness.",
+            "Start your 30-day challenge today."
+          ],
+          "ctas": ["Join Now", "Free Class", "View Schedule", "Meet Trainers"]
+        },
+        "features": [
+          { "title": "Personal Training", "description": "Customized plans to hit your specific targets." },
+          { "title": "Group Classes", "description": "High-energy sessions with expert instructors." },
+          { "title": "Nutrition Guides", "description": "Fuel your body with the right meal plans." }
+        ],
+        "testimonials": [
+          { "quote": "I've never felt stronger or healthier.", "author": "Gym Member" },
+          { "quote": "The yoga classes here are the highlight of my week.", "author": "Studio Member" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "dynamic-action-sports",
+        "iconStyle": "bold-filled"
+      },
+      "preferredLayouts": ["hero_split_right", "feat_bento", "price_3_col", "cta_split"]
+    },
+    {
+      "id": "ind_ecommerce_01",
+      "name": "E-commerce & Fashion",
+      "description": "Clothing brands, online stores, boutiques",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Summer Collection 2025",
+            "Style That Speaks",
+            "Sustainable Fashion for All",
+            "Shop the Look"
+          ],
+          "subheadlines": [
+            "Discover the latest trends in streetwear and luxury.",
+            "Ethically made, designed to last.",
+            "Free shipping on all orders over $50."
+          ],
+          "ctas": ["Shop Now", "New Arrivals", "View Sale", "Lookbook"]
+        },
+        "features": [
+          { "title": "Premium Quality", "description": "Finest fabrics sourced from around the world." },
+          { "title": "Easy Returns", "description": "30-day money-back guarantee on all items." },
+          { "title": "Secure Checkout", "description": "Shop with confidence using our encrypted payment system." }
+        ],
+        "testimonials": [
+          { "quote": "The quality is amazing and the fit is perfect.", "author": "Verified Buyer" },
+          { "quote": "Fast shipping and beautiful packaging.", "author": "Fashion Blogger" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "editorial-fashion",
+        "iconStyle": "minimal-line"
+      },
+      "preferredLayouts": ["hero_video_bg", "feat_grid_4", "test_slider", "foot_newsletter"]
+    },
+    {
+      "id": "ind_legal_01",
+      "name": "Legal & Corporate",
+      "description": "Law firms, consultancies, corporate services",
+      "content": {
+        "hero": {
+          "headlines": [
+            "Defending Your Rights",
+            "Strategic Business Solutions",
+            "Expert Legal Counsel",
+            "Partners in Your Success"
+          ],
+          "subheadlines": [
+            "Decades of experience in corporate and family law.",
+            "Navigating complex regulations so you don't have to.",
+            "Trusted by Fortune 500 companies."
+          ],
+          "ctas": ["Free Consultation", "Our Practice Areas", "About Us", "Contact Firm"]
+        },
+        "features": [
+          { "title": "Corporate Law", "description": "Mergers, acquisitions, and business formation." },
+          { "title": "Litigation", "description": "Aggressive representation in the courtroom." },
+          { "title": "Estate Planning", "description": "Protecting your legacy for future generations." }
+        ],
+        "testimonials": [
+          { "quote": "They handled our case with utmost professionalism.", "author": "CEO, Tech Corp" },
+          { "quote": "I felt supported and informed every step of the way.", "author": "Client" }
+        ]
+      },
+      "assetPreferences": {
+        "imageStyle": "corporate-office-candid",
+        "iconStyle": "classic-serif"
+      },
+      "preferredLayouts": ["hero_split_left", "feat_list_alt", "foot_multi_col", "cta_simple"]
+    }
+  ]
+}

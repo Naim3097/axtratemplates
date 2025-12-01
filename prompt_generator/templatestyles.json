@@ -1,0 +1,132 @@
+{
+  "designStyles": [
+    {
+      "id": "minimal",
+      "name": "Minimal & Clean",
+      "description": "Lots of whitespace, simple layouts, focuses on content",
+      "characteristics": [
+        "Generous spacing and breathing room",
+        "Limited color palette (2-3 colors max)",
+        "Simple geometric shapes",
+        "Clean sans-serif typography",
+        "Subtle animations"
+      ],
+      "examples": ["Apple", "Stripe", "Linear"],
+      "bestFor": ["SaaS", "Technology", "Professional services"],
+      "colorApproach": "Monochrome with single accent color",
+      "typography": "Large headings, ample line spacing"
+    },
+    {
+      "id": "bold",
+      "name": "Bold & Impactful",
+      "description": "Strong visuals, vibrant colors, attention-grabbing",
+      "characteristics": [
+        "High contrast colors",
+        "Large typography",
+        "Strong CTAs",
+        "Dynamic layouts",
+        "Eye-catching graphics"
+      ],
+      "examples": ["Spotify", "Shopify", "Webflow"],
+      "bestFor": ["E-commerce", "Creative agencies", "Entertainment"],
+      "colorApproach": "Vibrant primary colors with strong contrasts",
+      "typography": "Bold, expressive fonts with varied sizes"
+    },
+    {
+      "id": "professional",
+      "name": "Professional & Corporate",
+      "description": "Trustworthy, established, business-oriented",
+      "characteristics": [
+        "Conservative color schemes",
+        "Structured layouts",
+        "Professional imagery",
+        "Clear hierarchy",
+        "Trust indicators prominently displayed"
+      ],
+      "examples": ["IBM", "Salesforce", "Microsoft"],
+      "bestFor": ["B2B", "Finance", "Healthcare", "Enterprise"],
+      "colorApproach": "Blues, grays, subdued palette",
+      "typography": "Traditional, readable serif or sans-serif"
+    },
+    {
+      "id": "creative",
+      "name": "Creative & Artistic",
+      "description": "Unique, expressive, breaks conventional rules",
+      "characteristics": [
+        "Unconventional layouts",
+        "Custom illustrations",
+        "Playful interactions",
+        "Unique typography",
+        "Artistic color combinations"
+      ],
+      "examples": ["Mailchimp", "Figma", "Dribbble"],
+      "bestFor": ["Design studios", "Creative agencies", "Startups"],
+      "colorApproach": "Varied, experimental, multi-colored",
+      "typography": "Mix of fonts, creative hierarchy"
+    },
+    {
+      "id": "elegant",
+      "name": "Elegant & Sophisticated",
+      "description": "Refined, luxurious, attention to detail",
+      "characteristics": [
+        "Premium aesthetics",
+        "Refined typography",
+        "Sophisticated color palette",
+        "High-quality imagery",
+        "Subtle animations and transitions"
+      ],
+      "examples": ["Aesop", "Rolls-Royce", "Rolex"],
+      "bestFor": ["Luxury brands", "High-end services", "Premium products"],
+      "colorApproach": "Muted, sophisticated tones with gold/silver accents",
+      "typography": "Serif fonts, elegant spacing"
+    },
+    {
+      "id": "modern",
+      "name": "Modern & Trendy",
+      "description": "Current design trends, contemporary feel",
+      "characteristics": [
+        "Glassmorphism or gradient effects",
+        "3D elements",
+        "Modern color gradients",
+        "Micro-interactions",
+        "Contemporary layouts"
+      ],
+      "examples": ["Notion", "Framer", "Discord"],
+      "bestFor": ["Startups", "Tech companies", "Modern brands"],
+      "colorApproach": "Gradients, modern color combinations",
+      "typography": "Modern sans-serif, variable fonts"
+    },
+    {
+      "id": "playful",
+      "name": "Playful & Fun",
+      "description": "Friendly, approachable, energetic",
+      "characteristics": [
+        "Rounded shapes",
+        "Bright, cheerful colors",
+        "Illustrations and icons",
+        "Animated elements",
+        "Casual tone"
+      ],
+      "examples": ["Duolingo", "Headspace", "Slack"],
+      "bestFor": ["Consumer apps", "Education", "Wellness"],
+      "colorApproach": "Bright, saturated, happy colors",
+      "typography": "Rounded, friendly fonts"
+    },
+    {
+      "id": "technical",
+      "name": "Technical & Data-Driven",
+      "description": "Detailed, information-rich, analytical",
+      "characteristics": [
+        "Data visualizations",
+        "Technical specifications visible",
+        "Grid-based layouts",
+        "Monospace fonts for code",
+        "Dark mode friendly"
+      ],
+      "examples": ["GitHub", "Vercel", "AWS"],
+      "bestFor": ["Developer tools", "Analytics", "Technical products"],
+      "colorApproach": "Dark backgrounds, syntax-highlighting colors",
+      "typography": "Monospace for code, clean sans-serif for content"
+    }
+  ]
+}

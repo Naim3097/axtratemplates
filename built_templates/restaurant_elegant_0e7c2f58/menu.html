@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Noir Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__links-left">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="menu.html" class="nav__link active">Menu</a>
+            </div>
+            
+            <div class="nav__logo">
+                NOIR.
+            </div>
+            
+            <div class="nav__links-right">
+                <a href="about.html" class="nav__link">Story</a>
+                <a href="reservations.html" class="nav__link">Book</a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Story</a>
+        <a href="reservations.html">Reservations</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Menu Header" class="hero__bg">
+        <div class="hero__content">
+            <h1>Our Menu</h1>
+            <p>A symphony of flavors crafted with passion.</p>
+        </div>
+    </section>
+
+    <!-- Filterable Menu Grid -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="filter-nav">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="mains">Mains</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="menu-grid">
+                
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Tuna Tartare</h3>
+                            <span class="menu-item__price">$24</span>
+                        </div>
+                        <p class="menu-item__desc">Fresh yellowfin tuna, avocado, sesame oil, ginger lime dressing.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="1">Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Burrata & Heirloom</h3>
+                            <span class="menu-item__price">$22</span>
+                        </div>
+                        <p class="menu-item__desc">Creamy burrata, heirloom tomatoes, basil pesto, balsamic glaze.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="2">Details</button>
+                    </div>
+                </div>
+
+                <!-- Mains -->
+                <div class="menu-item" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Wagyu Ribeye</h3>
+                            <span class="menu-item__price">$85</span>
+                        </div>
+                        <p class="menu-item__desc">10oz A5 Wagyu, truffle mashed potatoes, grilled asparagus, red wine reduction.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="3">Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1580476262716-6b3693166861?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Pan Seared Scallops</h3>
+                            <span class="menu-item__price">$42</span>
+                        </div>
+                        <p class="menu-item__desc">Jumbo scallops, cauliflower puree, crispy pancetta, lemon butter sauce.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="4">Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Wild Mushroom Risotto</h3>
+                            <span class="menu-item__price">$34</span>
+                        </div>
+                        <p class="menu-item__desc">Arborio rice, porcini mushrooms, parmesan reggiano, truffle oil.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="5">Details</button>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1579306194872-64d3b7bac4c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Dark Chocolate Fondant</h3>
+                            <span class="menu-item__price">$16</span>
+                        </div>
+                        <p class="menu-item__desc">Molten center, vanilla bean ice cream, raspberry coulis.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="6">Details</button>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish" class="menu-item__img">
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Smoked Old Fashioned</h3>
+                            <span class="menu-item__price">$18</span>
+                        </div>
+                        <p class="menu-item__desc">Bourbon, maple syrup, angostura bitters, hickory smoke.</p>
+                        <button class="btn btn--outline btn--sm view-details" data-id="7">Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="dishModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle">Dish Name</h2>
+                <p id="modalDesc">Dish description goes here.</p>
+                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                    <p><strong>Allergens:</strong> Dairy, Gluten, Nuts</p>
+                    <p><strong>Pairing:</strong> Pinot Noir 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem; color: #fff; text-align: left;">NOIR.</div>
+                    <p style="color: #aaa;">123 Culinary Ave, Metropolis<br>(555) 987-6543</p>
+                </div>
+                <div>
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">Story</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Mon-Thu: 5pm - 10pm</li>
+                        <li>Fri-Sat: 5pm - 11pm</li>
+                        <li>Sun: 4pm - 9pm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Noir Restaurant. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

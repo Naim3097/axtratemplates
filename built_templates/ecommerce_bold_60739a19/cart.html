@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | ETHOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="menu-trigger">
+                <i class="fas fa-bars"></i> MENU
+            </div>
+            <a href="index.html" class="logo">ETHOS.</a>
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay Menu -->
+    <div class="overlay-menu">
+        <div class="close-menu" style="position: absolute; top: 2rem; right: 2rem; color: #fff; font-size: 2rem; cursor: pointer;">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#" class="lean-x-trigger">About</a></li>
+            <li><a href="#" class="lean-x-trigger">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Cart Header -->
+    <header class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Cart</h1>
+                <p class="hero-subtitle">Review your sustainable picks.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 350px; gap: 4rem; align-items: start;">
+                
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div style="display: flex; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;">
+                        <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Product 1" style="width: 120px; height: 150px; object-fit: cover; border: 1px solid #fff;">
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <h3 style="font-size: 1.2rem;">Organic Cotton Dress</h3>
+                                <span style="font-weight: bold;">$89.00</span>
+                            </div>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Size: S | Color: Natural</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">-</button>
+                                    <input type="text" value="1" style="width: 40px; text-align: center; background: transparent; border: none; color: #fff;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">+</button>
+                                </div>
+                                <button style="background: transparent; border: none; color: var(--color-text-muted); cursor: pointer; text-decoration: underline;">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div style="display: flex; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Product 2" style="width: 120px; height: 150px; object-fit: cover; border: 1px solid #fff;">
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <h3 style="font-size: 1.2rem;">Recycled Tote</h3>
+                                <span style="font-weight: bold;">$35.00</span>
+                            </div>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">One Size | Color: Black</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">-</button>
+                                    <input type="text" value="1" style="width: 40px; text-align: center; background: transparent; border: none; color: #fff;">
+                                    <button style="width: 30px; height: 30px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">+</button>
+                                </div>
+                                <button style="background: transparent; border: none; color: var(--color-text-muted); cursor: pointer; text-decoration: underline;">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="cart-summary" style="background: var(--color-surface); padding: 2rem; border: 1px solid rgba(255,255,255,0.1); position: sticky; top: 2rem;">
+                    <h3 style="margin-bottom: 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: inline-block;">Order Summary</h3>
+                    
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="color: var(--color-text-muted);">Subtotal</span>
+                        <span>$124.00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="color: var(--color-text-muted);">Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem; font-size: 1.2rem; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                        <span>Total</span>
+                        <span style="color: var(--color-primary);">$124.00</span>
+                    </div>
+
+                    <button class="btn btn-block">Proceed to Checkout</button>
+                    
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">We accept</p>
+                        <div style="font-size: 1.5rem; color: #fff; display: flex; justify-content: center; gap: 1rem;">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">ETHOS.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Fashion with a conscience.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">Men</a></li>
+                    <li><a href="shop.html">Women</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">Our Story</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">Instagram</a></li>
+                    <li><a href="#" class="lean-x-trigger">Twitter</a></li>
+                    <li><a href="#" class="lean-x-trigger">Facebook</a></li>
+                    <li><a href="#" class="lean-x-trigger">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 ETHOS Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

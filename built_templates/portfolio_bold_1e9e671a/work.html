@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | BOLD. Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BOLD.</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="btn btn-primary lean-x-trigger">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Selected <span class="text-primary">Work</span></h1>
+            <p class="page-subtitle">A collection of projects that define my style.</p>
+        </div>
+    </header>
+
+    <!-- Filterable Gallery -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Branding</span>
+                        <h3 class="project-title"><a href="project.html">Neon Future</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e0b7a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Web Design</span>
+                        <h3 class="project-title"><a href="project.html">Urban Architecture</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="marketing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Marketing</span>
+                        <h3 class="project-title"><a href="project.html">Growth Strategy</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 4">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Branding</span>
+                        <h3 class="project-title"><a href="project.html">Minimalist Coffee</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 5">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Web Design</span>
+                        <h3 class="project-title"><a href="project.html">Tech Dashboard</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card" data-category="marketing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 6">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Marketing</span>
+                        <h3 class="project-title"><a href="project.html">Social Campaign</a></h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary text-dark text-center">
+        <div class="container">
+            <h2 class="section-title" style="color: #000; border-color: #000;">Ready to Start?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; font-weight: 600;">Let's build something amazing together. Reach out today for a consultation.</p>
+            <a href="#" class="btn btn-outline lean-x-trigger" style="border-color: #000; color: #000;">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo">BOLD.</a>
+                <p>Designing the future, one pixel at a time.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@boldportfolio.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BOLD Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

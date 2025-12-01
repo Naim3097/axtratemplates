@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Noir Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__links-left">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="menu.html" class="nav__link">Menu</a>
+            </div>
+            
+            <div class="nav__logo">
+                NOIR.
+            </div>
+            
+            <div class="nav__links-right">
+                <a href="about.html" class="nav__link active">Story</a>
+                <a href="reservations.html" class="nav__link">Book</a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Story</a>
+        <a href="reservations.html">Reservations</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh;">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Kitchen" class="hero__bg">
+        <div class="hero__content">
+            <h1>The Art of Dining</h1>
+            <p>Where tradition meets innovation.</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">A Legacy of Flavor</h2>
+                    <p style="margin-bottom: 1.5rem; color: var(--color-text-muted); line-height: 1.8;">
+                        Founded in 2010, Noir began with a simple vision: to create a dining experience that engages all the senses. What started as a small bistro has evolved into one of the city's most celebrated culinary destinations.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; color: var(--color-text-muted); line-height: 1.8;">
+                        We believe that food is more than just sustenance; it is an art form. Our chefs draw inspiration from global cuisines while remaining rooted in classic techniques, resulting in dishes that are both familiar and surprising.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3c47e2ce2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Restaurant Interior" style="width: 100%; border-radius: 4px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Chef -->
+    <section class="section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div style="order: 2;">
+                    <h2 style="margin-bottom: 1.5rem;">Meet the Chef</h2>
+                    <h3 style="font-family: 'Roboto', sans-serif; font-weight: 300; margin-bottom: 1rem;">Executive Chef Julian Black</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--color-text-muted); line-height: 1.8;">
+                        With over 20 years of experience in Michelin-starred kitchens across Paris, Tokyo, and New York, Chef Julian Black brings a world of knowledge to Noir. His philosophy is simple: respect the ingredients.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; color: var(--color-text-muted); line-height: 1.8;">
+                        "I want our guests to taste the season," says Chef Black. "Every dish on our menu is a reflection of what is best right now. We don't force flavors; we enhance them."
+                    </p>
+                </div>
+                <div style="order: 1;">
+                    <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Chef Julian Black" style="width: 100%; border-radius: 4px; filter: grayscale(100%);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 3rem;">Our Philosophy</h2>
+            <div class="feat-grid-3">
+                <div class="feat-card">
+                    <h3>Sourcing</h3>
+                    <p style="color: var(--color-text-muted);">We work directly with local farmers and fishermen to ensure the highest quality and sustainability.</p>
+                </div>
+                <div class="feat-card">
+                    <h3>Craftsmanship</h3>
+                    <p style="color: var(--color-text-muted);">Everything is made in-house, from our sourdough bread to our hand-churned butter.</p>
+                </div>
+                <div class="feat-card">
+                    <h3>Hospitality</h3>
+                    <p style="color: var(--color-text-muted);">Service is not just a job; it's a passion. We strive to make every guest feel like family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem; color: #fff; text-align: left;">NOIR.</div>
+                    <p style="color: #aaa;">123 Culinary Ave, Metropolis<br>(555) 987-6543</p>
+                </div>
+                <div>
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">Story</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Mon-Thu: 5pm - 10pm</li>
+                        <li>Fri-Sat: 5pm - 11pm</li>
+                        <li>Sun: 4pm - 9pm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Noir Restaurant. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

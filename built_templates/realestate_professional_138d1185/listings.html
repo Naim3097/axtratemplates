@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Prestige Estates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">PRESTIGE<span style="color: var(--color-accent);">.</span></a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="listings.html" class="nav-link" style="color: var(--color-primary);">Properties <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown">
+                        <a href="listings.html">For Sale</a>
+                        <a href="listings.html">For Rent</a>
+                        <a href="listings.html">New Developments</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link lean-x-trigger">Agents</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <a href="#" class="btn lean-x-trigger">Schedule Viewing</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: var(--color-secondary); padding: 3rem 0;">
+        <div class="container">
+            <h1>Exclusive Listings</h1>
+            <p style="color: var(--color-text-muted);">Discover your next dream home from our curated collection.</p>
+        </div>
+    </section>
+
+    <!-- Listings -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div style="background: #fff; padding: 2rem; border: 1px solid #eee; margin-bottom: 3rem; display: flex; gap: 2rem; flex-wrap: wrap; align-items: end;">
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Location</label>
+                    <select style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; font-family: var(--font-body);">
+                        <option>All Locations</option>
+                        <option>Beverly Hills</option>
+                        <option>New York</option>
+                        <option>Miami</option>
+                        <option>London</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Price Range</label>
+                    <select style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; font-family: var(--font-body);">
+                        <option>Any Price</option>
+                        <option>$1M - $2M</option>
+                        <option>$2M - $5M</option>
+                        <option>$5M+</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Property Type</label>
+                    <select style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; font-family: var(--font-body);">
+                        <option>All Types</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                    </select>
+                </div>
+                <button class="btn lean-x-trigger" style="min-width: 150px;">Filter</button>
+            </div>
+
+            <div class="grid-3">
+                <!-- Property 1 -->
+                <article class="property-card">
+                    <a href="property.html">
+                        <img src="https://images.unsplash.com/photo-1600596542815-27bfef40d396?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property" class="property-img">
+                        <div class="property-info">
+                            <div class="property-price">$2,500,000</div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Modern Villa</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Beverly Hills, CA</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                            </div>
+                            <a href="property.html" class="btn btn--outline" style="width: 100%; text-align: center; padding: 0.8rem;">View Details</a>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Property 2 -->
+                <article class="property-card">
+                    <a href="property.html">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property" class="property-img">
+                        <div class="property-info">
+                            <div class="property-price">$1,850,000</div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Luxury Apartment</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">New York, NY</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-bed"></i> 2 Beds</span>
+                                <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                            </div>
+                            <a href="property.html" class="btn btn--outline" style="width: 100%; text-align: center; padding: 0.8rem;">View Details</a>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Property 3 -->
+                <article class="property-card">
+                    <a href="property.html">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property" class="property-img">
+                        <div class="property-info">
+                            <div class="property-price">$3,200,000</div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Seaside Mansion</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Miami, FL</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-bed"></i> 6 Beds</span>
+                                <span><i class="fas fa-bath"></i> 5 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 5,000 sqft</span>
+                            </div>
+                            <a href="property.html" class="btn btn--outline" style="width: 100%; text-align: center; padding: 0.8rem;">View Details</a>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Property 4 -->
+                <article class="property-card">
+                    <a href="property.html">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property" class="property-img">
+                        <div class="property-info">
+                            <div class="property-price">$4,500,000</div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Hilltop Estate</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Los Angeles, CA</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                <span><i class="fas fa-bath"></i> 6 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 6,000 sqft</span>
+                            </div>
+                            <a href="property.html" class="btn btn--outline" style="width: 100%; text-align: center; padding: 0.8rem;">View Details</a>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Property 5 -->
+                <article class="property-card">
+                    <a href="property.html">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property" class="property-img">
+                        <div class="property-info">
+                            <div class="property-price">$1,200,000</div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">City Penthouse</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Chicago, IL</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2,000 sqft</span>
+                            </div>
+                            <a href="property.html" class="btn btn--outline" style="width: 100%; text-align: center; padding: 0.8rem;">View Details</a>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Property 6 -->
+                <article class="property-card">
+                    <a href="property.html">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property" class="property-img">
+                        <div class="property-info">
+                            <div class="property-price">$5,800,000</div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Waterfront Villa</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Malibu, CA</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                <span><i class="fas fa-bath"></i> 5 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 4,500 sqft</span>
+                            </div>
+                            <a href="property.html" class="btn btn--outline" style="width: 100%; text-align: center; padding: 0.8rem;">View Details</a>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <button class="btn btn--outline lean-x-trigger">Load More Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>PRESTIGE.</h3>
+                    <p style="color: #ccc;">Your trusted partner in luxury real estate.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="listings.html">Properties</a>
+                    <a href="#" class="lean-x-trigger">Agents</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">123 Luxury Lane</p>
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">Beverly Hills, CA 90210</p>
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">(555) 123-4567</p>
+                    <p style="color: #ccc;">info@prestige.com</p>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #ccc;">
+                &copy; 2025 Prestige Estates. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

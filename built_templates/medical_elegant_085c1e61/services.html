@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Aura Medical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Aura.</a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <div class="dropdown">
+                        <a href="services.html#cardiology">Cardiology</a>
+                        <a href="services.html#neurology">Neurology</a>
+                        <a href="services.html#pediatrics">Pediatrics</a>
+                        <a href="services.html#dermatology">Dermatology</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="doctors.html" class="nav-link">Doctors</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <a href="#" class="btn">Patient Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: #f9f9f9; padding: 4rem 0;">
+        <div class="container" style="text-align: center;">
+            <h1>Our Medical Services</h1>
+            <p style="max-width: 600px; margin: 0 auto;">Comprehensive care delivered with precision and compassion across a wide range of specialties.</p>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Cardiology -->
+            <div id="cardiology" class="grid-2" style="align-items: center; margin-bottom: 6rem;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cardiology" style="border-radius: 0px;">
+                </div>
+                <div>
+                    <i class="fas fa-heartbeat" style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--color-primary);"></i>
+                    <h2>Cardiology</h2>
+                    <p style="margin-bottom: 1.5rem;">Our cardiology department offers state-of-the-art diagnostic and treatment services for all types of heart conditions. From preventative care to complex interventions, our team is dedicated to your heart health.</p>
+                    <ul style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Echocardiography</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Cardiac Catheterization</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Heart Rhythm Management</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Book Consultation</a>
+                </div>
+            </div>
+
+            <!-- Neurology -->
+            <div id="neurology" class="grid-2" style="align-items: center; margin-bottom: 6rem;">
+                <div style="order: 2;">
+                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Neurology" style="border-radius: 0px;">
+                </div>
+                <div style="order: 1;">
+                    <i class="fas fa-brain" style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--color-primary);"></i>
+                    <h2>Neurology</h2>
+                    <p style="margin-bottom: 1.5rem;">We provide comprehensive care for disorders affecting the brain, spinal cord, and nervous system. Our specialists use the latest technology to diagnose and treat a wide range of neurological conditions.</p>
+                    <ul style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Stroke Care</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Epilepsy Management</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Multiple Sclerosis Treatment</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Book Consultation</a>
+                </div>
+            </div>
+
+            <!-- Pediatrics -->
+            <div id="pediatrics" class="grid-2" style="align-items: center; margin-bottom: 6rem;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pediatrics" style="border-radius: 0px;">
+                </div>
+                <div>
+                    <i class="fas fa-baby" style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--color-primary);"></i>
+                    <h2>Pediatrics</h2>
+                    <p style="margin-bottom: 1.5rem;">Our pediatric team is dedicated to the health and well-being of children from infancy through adolescence. We provide a child-friendly environment to make visits as comfortable as possible.</p>
+                    <ul style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Well-Child Visits</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Immunizations</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Developmental Screenings</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Book Consultation</a>
+                </div>
+            </div>
+
+            <!-- Dermatology -->
+            <div id="dermatology" class="grid-2" style="align-items: center;">
+                <div style="order: 2;">
+                    <img src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dermatology" style="border-radius: 0px;">
+                </div>
+                <div style="order: 1;">
+                    <i class="fas fa-allergies" style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--color-primary);"></i>
+                    <h2>Dermatology</h2>
+                    <p style="margin-bottom: 1.5rem;">Expert care for skin, hair, and nail conditions. We offer both medical and cosmetic dermatology services to help you look and feel your best.</p>
+                    <ul style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Skin Cancer Screening</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Acne Treatment</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="margin-right: 10px;"></i> Cosmetic Procedures</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Book Consultation</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="color: #fff; margin-bottom: 1rem; display: inline-block;">Aura.</a>
+                    <p style="color: #999;">Providing elegant, world-class healthcare solutions for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="doctors.html">Doctors</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <a href="services.html">Cardiology</a>
+                    <a href="services.html">Neurology</a>
+                    <a href="services.html">Pediatrics</a>
+                    <a href="services.html">Dermatology</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p style="color: #999; margin-bottom: 0.5rem;">123 Medical Center Dr</p>
+                    <p style="color: #999; margin-bottom: 0.5rem;">New York, NY 10001</p>
+                    <p style="color: #999; margin-bottom: 0.5rem;">+1 (555) 123-4567</p>
+                    <p style="color: #999;">info@auramedical.com</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; margin-top: 4rem; padding-top: 2rem; text-align: center; color: #666;">
+                <p>&copy; 2023 Aura Medical. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

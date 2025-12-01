@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Bold Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .cart-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 900px) {
+            .cart-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .cart-table th {
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 2px solid #333;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .cart-table td {
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid #333;
+            vertical-align: middle;
+        }
+        .cart-item-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .cart-thumb {
+            width: 80px;
+            height: 80px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+            font-size: 1.5rem;
+        }
+        .qty-control {
+            display: flex;
+            align-items: center;
+            border: 1px solid #444;
+            width: fit-content;
+        }
+        .qty-btn {
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        .qty-val {
+            padding: 0.5rem;
+            width: 30px;
+            text-align: center;
+        }
+        .remove-btn {
+            color: #666;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .remove-btn:hover {
+            color: var(--color-secondary);
+        }
+        .summary-card {
+            background: #222;
+            padding: 2rem;
+            border: 1px solid #333;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: var(--color-text-muted);
+        }
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;"><i class="fas fa-bolt"></i> BOLD.</a>
+            </div>
+            
+            <nav class="nav__menu">
+                <div class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </div>
+                <div class="nav__item">
+                    <a href="shop.html" class="nav__link">Shop</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Contact</a>
+                </div>
+            </nav>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="cart.html" style="color: #fff; font-size: 1.2rem;"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-close">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Collections</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div>
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="cart-item-info">
+                                        <div class="cart-thumb"><i class="fas fa-tshirt"></i></div>
+                                        <div>
+                                            <h4 style="margin-bottom: 0.2rem;">Urban Oversized Tee</h4>
+                                            <div style="font-size: 0.8rem; color: #888;">Size: M | Color: Black</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$45.00</td>
+                                <td>
+                                    <div class="qty-control">
+                                        <button class="qty-btn">-</button>
+                                        <div class="qty-val">1</div>
+                                        <button class="qty-btn">+</button>
+                                    </div>
+                                </td>
+                                <td style="font-weight: 600;">$45.00</td>
+                                <td><i class="fas fa-trash remove-btn"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cart-item-info">
+                                        <div class="cart-thumb"><i class="fas fa-hat-cowboy"></i></div>
+                                        <div>
+                                            <h4 style="margin-bottom: 0.2rem;">Wide Brim Hat</h4>
+                                            <div style="font-size: 0.8rem; color: #888;">Size: One Size | Color: Beige</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$35.00</td>
+                                <td>
+                                    <div class="qty-control">
+                                        <button class="qty-btn">-</button>
+                                        <div class="qty-val">2</div>
+                                        <button class="qty-btn">+</button>
+                                    </div>
+                                </td>
+                                <td style="font-weight: 600;">$70.00</td>
+                                <td><i class="fas fa-trash remove-btn"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="shop.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">&larr; Continue Shopping</a>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div>
+                    <div class="summary-card">
+                        <h3 style="margin-bottom: 1.5rem; font-family: 'Oswald', sans-serif;">Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$115.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$9.20</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span>$124.20</span>
+                        </div>
+                        <button class="btn" style="width: 100%; margin-top: 1.5rem;">Proceed to Checkout</button>
+                        
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <p style="font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">We accept</p>
+                            <div style="font-size: 1.5rem; color: #888; display: flex; gap: 0.5rem; justify-content: center;">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="nav__logo" style="margin-bottom: 1rem;">BOLD.</div>
+                    <p style="color: #888;">Redefining fashion for the modern era.</p>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem; color: #555; font-size: 0.9rem;">
+                &copy; 2025 Bold Fashion. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

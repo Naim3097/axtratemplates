@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alex Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ALEX.DESIGN</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="btn btn-primary lean-x-trigger">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="padding: 5rem 0;">
+        <div class="container">
+            <h1 class="hero-title">My Work</h1>
+            <p class="hero-subtitle">A collection of projects that demonstrate my passion for design and results.</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Branding</span>
+                        <h3 class="project-title"><a href="project.html">Corporate Identity</a></h3>
+                        <p class="project-desc">Rebranding a Fortune 500 financial firm.</p>
+                        <a href="project.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">View Case</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Web Design</span>
+                        <h3 class="project-title"><a href="project.html">SaaS Dashboard</a></h3>
+                        <p class="project-desc">UI/UX design for an analytics platform.</p>
+                        <a href="project.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">View Case</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="marketing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Marketing</span>
+                        <h3 class="project-title"><a href="project.html">Growth Campaign</a></h3>
+                        <p class="project-desc">Social media strategy for a tech startup.</p>
+                        <a href="project.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">View Case</a>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Branding</span>
+                        <h3 class="project-title"><a href="project.html">Tech Conference</a></h3>
+                        <p class="project-desc">Visual identity for a global tech event.</p>
+                        <a href="project.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">View Case</a>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Web Design</span>
+                        <h3 class="project-title"><a href="project.html">E-commerce Redesign</a></h3>
+                        <p class="project-desc">Improving conversion rates for a retail brand.</p>
+                        <a href="project.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">View Case</a>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card" data-category="marketing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Marketing</span>
+                        <h3 class="project-title"><a href="project.html">Product Launch</a></h3>
+                        <p class="project-desc">Go-to-market strategy for a new app.</p>
+                        <a href="project.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">View Case</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-primary text-center" style="color: #fff;">
+        <div class="container">
+            <h2 class="section-title" style="color: #fff;">Have a Project in Mind?</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Let's discuss how we can help your business grow.</p>
+            <a href="#" class="btn btn-outline lean-x-trigger" style="border-color: #fff; color: #fff;">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: #fff;">ALEX.DESIGN</a>
+                <p>Professional design services for forward-thinking companies.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="lean-x-trigger">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Alex Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

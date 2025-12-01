@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio | Jordan Lee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">JORDAN<span style="color: var(--color-primary);">.</span></a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="work.html" class="nav-link">Work</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#" class="nav-link lean-x-trigger">Contact</a>
+                <a href="#" class="btn lean-x-trigger" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Hire Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding: 8rem 0; text-align: center; position: relative; overflow: hidden;">
+        <!-- Background Elements -->
+        <div style="position: absolute; top: 10%; left: 10%; width: 100px; height: 100px; background: var(--color-primary); border-radius: 50%; filter: blur(80px); opacity: 0.5;"></div>
+        <div style="position: absolute; bottom: 10%; right: 10%; width: 150px; height: 150px; background: var(--color-secondary); border-radius: 50%; filter: blur(100px); opacity: 0.5;"></div>
+
+        <div class="container" style="position: relative; z-index: 1;">
+            <h1 style="margin-bottom: 1.5rem; line-height: 1.1;">Hello, I'm Jordan.<br><span style="color: var(--color-text);">I Create Art.</span></h1>
+            <p style="font-size: 1.5rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 3rem;">Helping visionary brands connect with their audience through bold, creative design.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="work.html" class="btn">View Work</a>
+                <a href="#" class="btn btn--outline lean-x-trigger">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features (Grid 3) -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-paint-brush" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-size: 1.5rem; color: var(--color-text);">Brand Identity</h3>
+                    <p style="color: var(--color-text-muted);">Crafting unique visual identities that tell your story and resonate with your audience.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code" style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-size: 1.5rem; color: var(--color-text);">Web Design</h3>
+                    <p style="color: var(--color-text-muted);">Designing immersive digital experiences that are both beautiful and functional.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bullhorn" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-size: 1.5rem; color: var(--color-text);">Art Direction</h3>
+                    <p style="color: var(--color-text-muted);">Guiding the visual strategy of campaigns to ensure consistency and impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Works -->
+    <section class="section" style="background-color: #252b2d;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 3rem;">
+                <h2>Selected Works</h2>
+                <a href="work.html" class="btn btn--outline">View All</a>
+            </div>
+            
+            <div class="grid-2">
+                <article class="project-card">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 1" class="project-img">
+                        <div class="project-info">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Neon Dreams</h3>
+                            <p style="color: var(--color-primary); font-weight: bold;">Art Direction</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card" style="margin-top: 4rem;">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 2" class="project-img">
+                        <div class="project-info">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Future Tech</h3>
+                            <p style="color: var(--color-secondary); font-weight: bold;">Web Design</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="text-align: center;">
+        <div class="container">
+            <i class="fas fa-quote-left" style="font-size: 3rem; color: var(--color-surface); margin-bottom: 2rem;"></i>
+            <h2 style="font-size: 2.5rem; max-width: 900px; margin: 0 auto 2rem; color: var(--color-text);">"Jordan's creativity knows no bounds. The work delivered was not only visually stunning but also strategically sound."</h2>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid var(--color-primary);">
+                <div style="text-align: left;">
+                    <p style="font-weight: bold; color: var(--color-primary); margin-bottom: 0;">Elena Rodriguez</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">CMO, Visionary Inc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-3">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;">JORDAN<span style="color: var(--color-primary);">.</span></a>
+                    <p style="color: var(--color-text-muted);">Creating digital experiences that matter.</p>
+                </div>
+                <div>
+                    <h3>Sitemap</h3>
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-instagram" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-dribbble" style="font-size: 1.5rem;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--color-surface);">
+                &copy; 2025 Jordan Lee. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "strategy": "Atomic Design Permutations",
+    "estimatedCombinations": "Unlimited (Combinatorial)",
+    "version": "1.1",
+    "description": "Expanded database for high-volume template generation"
+  },
+  "atomicStyles": {
+    "colorPalettes": [
+      { "id": "cp_min_01", "styleRef": "minimal", "colors": { "primary": "#000000", "secondary": "#FFFFFF", "accent": "#333333", "background": "#FAFAFA", "surface": "#FFFFFF" }, "mood": "Stark White" },
+      { "id": "cp_min_02", "styleRef": "minimal", "colors": { "primary": "#2D3436", "secondary": "#DFE6E9", "accent": "#636E72", "background": "#FFFFFF", "surface": "#F5F6FA" }, "mood": "Soft Gray" },
+      { "id": "cp_min_03", "styleRef": "minimal", "colors": { "primary": "#1A202C", "secondary": "#E2E8F0", "accent": "#4A5568", "background": "#F7FAFC", "surface": "#FFFFFF" }, "mood": "Cool Slate" },
+      { "id": "cp_min_04", "styleRef": "minimal", "colors": { "primary": "#2C3E50", "secondary": "#ECF0F1", "accent": "#BDC3C7", "background": "#FFFFFF", "surface": "#F9F9F9" }, "mood": "Architectural" },
+      { "id": "cp_min_05", "styleRef": "minimal", "colors": { "primary": "#000000", "secondary": "#FFFFFF", "accent": "#000000", "background": "#F0F0F0", "surface": "#FFFFFF" }, "mood": "Monochrome High Contrast" },
+      { "id": "cp_min_06", "styleRef": "minimal", "colors": { "primary": "#4A4A4A", "secondary": "#EFEFEF", "accent": "#9B9B9B", "background": "#FFFFFF", "surface": "#FAFAFA" }, "mood": "Museum" },
+      { "id": "cp_min_07", "styleRef": "minimal", "colors": { "primary": "#374151", "secondary": "#F3F4F6", "accent": "#9CA3AF", "background": "#FFFFFF", "surface": "#F9FAFB" }, "mood": "Tailwind Gray" },
+      { "id": "cp_min_08", "styleRef": "minimal", "colors": { "primary": "#18181B", "secondary": "#E4E4E7", "accent": "#71717A", "background": "#FFFFFF", "surface": "#FAFAFA" }, "mood": "Zinc" },
+      { "id": "cp_min_09", "styleRef": "minimal", "colors": { "primary": "#27272A", "secondary": "#F4F4F5", "accent": "#A1A1AA", "background": "#FFFFFF", "surface": "#FFFFFF" }, "mood": "Clean Tech" },
+      { "id": "cp_min_10", "styleRef": "minimal", "colors": { "primary": "#0F172A", "secondary": "#F1F5F9", "accent": "#64748B", "background": "#FFFFFF", "surface": "#F8FAFC" }, "mood": "Slate Blue" },
+
+      { "id": "cp_bold_01", "styleRef": "bold", "colors": { "primary": "#FF4500", "secondary": "#1A1A1A", "accent": "#FFD700", "background": "#121212", "surface": "#1E1E1E" }, "mood": "Electric Orange" },
+      { "id": "cp_bold_02", "styleRef": "bold", "colors": { "primary": "#0984E3", "secondary": "#D63031", "accent": "#FDCB6E", "background": "#2D3436", "surface": "#000000" }, "mood": "Pop Art" },
+      { "id": "cp_bold_03", "styleRef": "bold", "colors": { "primary": "#6C5CE7", "secondary": "#00CEC9", "accent": "#A29BFE", "background": "#2D3436", "surface": "#1E272E" }, "mood": "Cyberpunk" },
+      { "id": "cp_bold_04", "styleRef": "bold", "colors": { "primary": "#E11D48", "secondary": "#FFF1F2", "accent": "#FB7185", "background": "#000000", "surface": "#1C1917" }, "mood": "Neon Rose" },
+      { "id": "cp_bold_05", "styleRef": "bold", "colors": { "primary": "#FACC15", "secondary": "#000000", "accent": "#FFFFFF", "background": "#171717", "surface": "#262626" }, "mood": "Construction" },
+      { "id": "cp_bold_06", "styleRef": "bold", "colors": { "primary": "#8B5CF6", "secondary": "#C4B5FD", "accent": "#10B981", "background": "#111827", "surface": "#1F2937" }, "mood": "Twitch Vibes" },
+      { "id": "cp_bold_07", "styleRef": "bold", "colors": { "primary": "#EC4899", "secondary": "#FBCFE8", "accent": "#F472B6", "background": "#831843", "surface": "#9D174D" }, "mood": "Berry Blast" },
+      { "id": "cp_bold_08", "styleRef": "bold", "colors": { "primary": "#14B8A6", "secondary": "#CCFBF1", "accent": "#F59E0B", "background": "#0F766E", "surface": "#115E59" }, "mood": "Teal & Amber" },
+      { "id": "cp_bold_09", "styleRef": "bold", "colors": { "primary": "#3B82F6", "secondary": "#EFF6FF", "accent": "#EF4444", "background": "#1E3A8A", "surface": "#1E40AF" }, "mood": "Patriot" },
+      { "id": "cp_bold_10", "styleRef": "bold", "colors": { "primary": "#A855F7", "secondary": "#F3E8FF", "accent": "#EAB308", "background": "#581C87", "surface": "#6B21A8" }, "mood": "Royal Purple" },
+
+      { "id": "cp_prof_01", "styleRef": "professional", "colors": { "primary": "#003366", "secondary": "#F0F4F8", "accent": "#00509E", "background": "#FFFFFF", "surface": "#F8F9FA" }, "mood": "Trustworthy Blue" },
+      { "id": "cp_prof_02", "styleRef": "professional", "colors": { "primary": "#2C3E50", "secondary": "#ECF0F1", "accent": "#E74C3C", "background": "#FFFFFF", "surface": "#F5F6FA" }, "mood": "Corporate Clean" },
+      { "id": "cp_prof_03", "styleRef": "professional", "colors": { "primary": "#104F55", "secondary": "#F2F7F7", "accent": "#32746D", "background": "#FFFFFF", "surface": "#E8F1F2" }, "mood": "Medical Teal" },
+      { "id": "cp_prof_04", "styleRef": "professional", "colors": { "primary": "#1E3A8A", "secondary": "#DBEAFE", "accent": "#2563EB", "background": "#FFFFFF", "surface": "#F1F5F9" }, "mood": "Finance Blue" },
+      { "id": "cp_prof_05", "styleRef": "professional", "colors": { "primary": "#064E3B", "secondary": "#ECFDF5", "accent": "#059669", "background": "#FFFFFF", "surface": "#F0FDF4" }, "mood": "Eco Corp" },
+      { "id": "cp_prof_06", "styleRef": "professional", "colors": { "primary": "#4338CA", "secondary": "#E0E7FF", "accent": "#6366F1", "background": "#FFFFFF", "surface": "#EEF2FF" }, "mood": "Consulting Indigo" },
+      { "id": "cp_prof_07", "styleRef": "professional", "colors": { "primary": "#374151", "secondary": "#F3F4F6", "accent": "#DC2626", "background": "#FFFFFF", "surface": "#F9FAFB" }, "mood": "News Media" },
+      { "id": "cp_prof_08", "styleRef": "professional", "colors": { "primary": "#111827", "secondary": "#F9FAFB", "accent": "#2563EB", "background": "#FFFFFF", "surface": "#F3F4F6" }, "mood": "Legal Firm" },
+      { "id": "cp_prof_09", "styleRef": "professional", "colors": { "primary": "#78350F", "secondary": "#FFFBEB", "accent": "#D97706", "background": "#FFFFFF", "surface": "#FFFFFF" }, "mood": "Construction Pro" },
+      { "id": "cp_prof_10", "styleRef": "professional", "colors": { "primary": "#134E4A", "secondary": "#F0FDFA", "accent": "#2DD4BF", "background": "#FFFFFF", "surface": "#CCFBF1" }, "mood": "Dental" },
+
+      { "id": "cp_creat_01", "styleRef": "creative", "colors": { "primary": "#FF6B6B", "secondary": "#4ECDC4", "accent": "#FFE66D", "background": "#F7FFF7", "surface": "#FFFFFF" }, "mood": "Playful Pastel" },
+      { "id": "cp_creat_02", "styleRef": "creative", "colors": { "primary": "#5F27CD", "secondary": "#FF9FF3", "accent": "#54A0FF", "background": "#FFFFFF", "surface": "#F0F3F4" }, "mood": "Digital Artist" },
+      { "id": "cp_creat_03", "styleRef": "creative", "colors": { "primary": "#FF7675", "secondary": "#55EFC4", "accent": "#A29BFE", "background": "#2D3436", "surface": "#636E72" }, "mood": "Dracula" },
+      { "id": "cp_creat_04", "styleRef": "creative", "colors": { "primary": "#FD79A8", "secondary": "#FAB1A0", "accent": "#FFEAA7", "background": "#FFFFFF", "surface": "#FFF0F5" }, "mood": "Candy Shop" },
+      { "id": "cp_creat_05", "styleRef": "creative", "colors": { "primary": "#00B894", "secondary": "#00CEC9", "accent": "#FDCB6E", "background": "#2D3436", "surface": "#353B48" }, "mood": "Mint Dark" },
+      { "id": "cp_creat_06", "styleRef": "creative", "colors": { "primary": "#E84393", "secondary": "#81ECEC", "accent": "#6C5CE7", "background": "#FFFFFF", "surface": "#F0F0F0" }, "mood": "Vaporwave" },
+      { "id": "cp_creat_07", "styleRef": "creative", "colors": { "primary": "#D35400", "secondary": "#F39C12", "accent": "#2C3E50", "background": "#ECF0F1", "surface": "#FFFFFF" }, "mood": "Autumn" },
+      { "id": "cp_creat_08", "styleRef": "creative", "colors": { "primary": "#8E44AD", "secondary": "#9B59B6", "accent": "#F1C40F", "background": "#FFFFFF", "surface": "#F5EEF8" }, "mood": "Studio" },
+      { "id": "cp_creat_09", "styleRef": "creative", "colors": { "primary": "#16A085", "secondary": "#1ABC9C", "accent": "#E74C3C", "background": "#ECF0F1", "surface": "#FFFFFF" }, "mood": "Flat Design" },
+      { "id": "cp_creat_10", "styleRef": "creative", "colors": { "primary": "#2C3E50", "secondary": "#E74C3C", "accent": "#ECF0F1", "background": "#34495E", "surface": "#2C3E50" }, "mood": "Midnight Red" },
+
+      { "id": "cp_eleg_01", "styleRef": "elegant", "colors": { "primary": "#1B1B1B", "secondary": "#D4AF37", "accent": "#F5F5F5", "background": "#FFFFFF", "surface": "#FAFAFA" }, "mood": "Gold & Black" },
+      { "id": "cp_eleg_02", "styleRef": "elegant", "colors": { "primary": "#3E2723", "secondary": "#D7CCC8", "accent": "#8D6E63", "background": "#FDFBF7", "surface": "#FFFFFF" }, "mood": "Warm Coffee" },
+      { "id": "cp_eleg_03", "styleRef": "elegant", "colors": { "primary": "#263238", "secondary": "#ECEFF1", "accent": "#B0BEC5", "background": "#FFFFFF", "surface": "#FAFAFA" }, "mood": "Silver Luxury" },
+      { "id": "cp_eleg_04", "styleRef": "elegant", "colors": { "primary": "#4A0404", "secondary": "#F5E6E6", "accent": "#9B2C2C", "background": "#FFFFFF", "surface": "#FFF5F5" }, "mood": "Velvet" },
+      { "id": "cp_eleg_05", "styleRef": "elegant", "colors": { "primary": "#0C4A6E", "secondary": "#F0F9FF", "accent": "#BAE6FD", "background": "#FFFFFF", "surface": "#F0F9FF" }, "mood": "Sapphire" },
+      { "id": "cp_eleg_06", "styleRef": "elegant", "colors": { "primary": "#065F46", "secondary": "#ECFDF5", "accent": "#D1FAE5", "background": "#FFFFFF", "surface": "#F0FDF4" }, "mood": "Emerald" },
+      { "id": "cp_eleg_07", "styleRef": "elegant", "colors": { "primary": "#18181B", "secondary": "#E4E4E7", "accent": "#A1A1AA", "background": "#09090B", "surface": "#27272A" }, "mood": "Onyx" },
+      { "id": "cp_eleg_08", "styleRef": "elegant", "colors": { "primary": "#5B21B6", "secondary": "#EDE9FE", "accent": "#C4B5FD", "background": "#FFFFFF", "surface": "#F5F3FF" }, "mood": "Amethyst" },
+      { "id": "cp_eleg_09", "styleRef": "elegant", "colors": { "primary": "#7C2D12", "secondary": "#FFEDD5", "accent": "#FDBA74", "background": "#FFFFFF", "surface": "#FFF7ED" }, "mood": "Bronze" },
+      { "id": "cp_eleg_10", "styleRef": "elegant", "colors": { "primary": "#171717", "secondary": "#F5F5F5", "accent": "#737373", "background": "#FFFFFF", "surface": "#FAFAFA" }, "mood": "High Fashion" }
+    ],
+    "typographySystems": [
+      { "id": "ts_mod_01", "headings": { "family": "Inter", "weight": "700" }, "body": { "family": "Inter", "weight": "400" }, "pairingType": "Single Family" },
+      { "id": "ts_mod_02", "headings": { "family": "Roboto", "weight": "700" }, "body": { "family": "Roboto", "weight": "400" }, "pairingType": "Single Family" },
+      { "id": "ts_mod_03", "headings": { "family": "Open Sans", "weight": "800" }, "body": { "family": "Open Sans", "weight": "400" }, "pairingType": "Single Family" },
+      { "id": "ts_mod_04", "headings": { "family": "Montserrat", "weight": "700" }, "body": { "family": "Lato", "weight": "400" }, "pairingType": "Geometric/Humanist" },
+      { "id": "ts_mod_05", "headings": { "family": "Poppins", "weight": "600" }, "body": { "family": "Open Sans", "weight": "400" }, "pairingType": "Geometric/Humanist" },
+      
+      { "id": "ts_eleg_01", "headings": { "family": "Playfair Display", "weight": "600" }, "body": { "family": "Lato", "weight": "300" }, "pairingType": "Serif/Sans" },
+      { "id": "ts_eleg_02", "headings": { "family": "Lora", "weight": "500" }, "body": { "family": "Merriweather", "weight": "300" }, "pairingType": "Serif/Serif" },
+      { "id": "ts_eleg_03", "headings": { "family": "Cormorant Garamond", "weight": "600" }, "body": { "family": "Proza Libre", "weight": "400" }, "pairingType": "Display Serif/Sans" },
+      { "id": "ts_eleg_04", "headings": { "family": "Cinzel", "weight": "700" }, "body": { "family": "Fauna One", "weight": "400" }, "pairingType": "Classic/Modern" },
+      { "id": "ts_eleg_05", "headings": { "family": "Bodoni Moda", "weight": "700" }, "body": { "family": "Inter", "weight": "300" }, "pairingType": "High Contrast/Clean" },
+
+      { "id": "ts_bold_01", "headings": { "family": "Oswald", "weight": "700", "textTransform": "uppercase" }, "body": { "family": "Open Sans", "weight": "400" }, "pairingType": "Condensed/Sans" },
+      { "id": "ts_bold_02", "headings": { "family": "Bebas Neue", "weight": "400" }, "body": { "family": "Montserrat", "weight": "400" }, "pairingType": "Display/Geometric" },
+      { "id": "ts_bold_03", "headings": { "family": "Anton", "weight": "400" }, "body": { "family": "Roboto", "weight": "400" }, "pairingType": "Impact/Neutral" },
+      { "id": "ts_bold_04", "headings": { "family": "Fjalla One", "weight": "400" }, "body": { "family": "Nunito", "weight": "400" }, "pairingType": "Condensed/Rounded" },
+      { "id": "ts_bold_05", "headings": { "family": "Archivo Black", "weight": "400" }, "body": { "family": "Roboto", "weight": "400" }, "pairingType": "Heavy/Neutral" },
+
+      { "id": "ts_creat_01", "headings": { "family": "Abril Fatface", "weight": "400" }, "body": { "family": "Poppins", "weight": "300" }, "pairingType": "Display/Geometric" },
+      { "id": "ts_creat_02", "headings": { "family": "Pacifico", "weight": "400" }, "body": { "family": "Quicksand", "weight": "500" }, "pairingType": "Handwritten/Rounded" },
+      { "id": "ts_creat_03", "headings": { "family": "Righteous", "weight": "400" }, "body": { "family": "Roboto", "weight": "400" }, "pairingType": "Futuristic/Neutral" },
+      { "id": "ts_creat_04", "headings": { "family": "Lobster", "weight": "400" }, "body": { "family": "Cabin", "weight": "400" }, "pairingType": "Script/Sans" },
+      { "id": "ts_creat_05", "headings": { "family": "Amatic SC", "weight": "700" }, "body": { "family": "Josefin Sans", "weight": "400" }, "pairingType": "Handwritten/Geometric" },
+
+      { "id": "ts_tech_01", "headings": { "family": "Space Mono", "weight": "700" }, "body": { "family": "Roboto Mono", "weight": "400" }, "pairingType": "Mono/Mono" },
+      { "id": "ts_tech_02", "headings": { "family": "Fira Code", "weight": "600" }, "body": { "family": "Inter", "weight": "400" }, "pairingType": "Mono/Sans" },
+      { "id": "ts_tech_03", "headings": { "family": "Share Tech Mono", "weight": "400" }, "body": { "family": "Oxygen", "weight": "400" }, "pairingType": "Tech/Sans" },
+      { "id": "ts_tech_04", "headings": { "family": "VT323", "weight": "400" }, "body": { "family": "Courier Prime", "weight": "400" }, "pairingType": "Pixel/Mono" },
+      { "id": "ts_tech_05", "headings": { "family": "IBM Plex Mono", "weight": "600" }, "body": { "family": "IBM Plex Sans", "weight": "400" }, "pairingType": "Mono/Sans" }
+    ],
+    "shapeSystems": [
+      { "id": "shape_rounded", "borderRadius": { "sm": "4px", "md": "8px", "lg": "16px", "full": "9999px" }, "buttonStyle": "pill" },
+      { "id": "shape_sharp", "borderRadius": { "sm": "0px", "md": "0px", "lg": "0px", "full": "0px" }, "buttonStyle": "rectangle" },
+      { "id": "shape_brutalist", "borderRadius": { "sm": "0px", "md": "0px", "lg": "0px", "full": "0px" }, "buttonStyle": "hard-shadow", "borderWidth": "2px" },
+      { "id": "shape_soft", "borderRadius": { "sm": "8px", "md": "12px", "lg": "24px", "full": "9999px" }, "buttonStyle": "soft-shadow" },
+      { "id": "shape_organic", "borderRadius": { "sm": "4px 8px", "md": "12px 24px", "lg": "30% 70% 70% 30% / 30% 30% 70% 70%", "full": "50%" }, "buttonStyle": "blob" },
+      { "id": "shape_card", "borderRadius": { "sm": "2px", "md": "4px", "lg": "8px", "full": "12px" }, "buttonStyle": "card-lift" },
+      { "id": "shape_outline", "borderRadius": { "sm": "4px", "md": "6px", "lg": "8px", "full": "99px" }, "buttonStyle": "outline-only" },
+      { "id": "shape_glass", "borderRadius": { "sm": "8px", "md": "16px", "lg": "24px", "full": "9999px" }, "buttonStyle": "glassmorphism" }
+    ],
+    "spacingSystems": [
+      { "id": "spacing_compact", "baseUnit": 4, "scale": [4, 8, 12, 16, 24, 32] },
+      { "id": "spacing_standard", "baseUnit": 6, "scale": [6, 12, 18, 24, 36, 48] },
+      { "id": "spacing_spacious", "baseUnit": 8, "scale": [8, 16, 24, 32, 48, 64] },
+      { "id": "spacing_relaxed", "baseUnit": 10, "scale": [10, 20, 30, 40, 60, 80] },
+      { "id": "spacing_dense", "baseUnit": 2, "scale": [2, 4, 8, 12, 16, 24] }
+    ]
+  },
+  "layoutPatterns": [
+    { "id": "hero_split_left", "type": "hero", "structure": "grid-cols-2", "contentPlacement": "left", "imagePlacement": "right" },
+    { "id": "hero_split_right", "type": "hero", "structure": "grid-cols-2", "contentPlacement": "right", "imagePlacement": "left" },
+    { "id": "hero_centered", "type": "hero", "structure": "flex-col-center", "contentPlacement": "center", "imagePlacement": "background" },
+    { "id": "hero_minimal_text", "type": "hero", "structure": "flex-col-start", "contentPlacement": "left", "imagePlacement": "none" },
+    { "id": "hero_video_bg", "type": "hero", "structure": "fullscreen", "contentPlacement": "center", "imagePlacement": "video-background" },
+    { "id": "hero_app_showcase", "type": "hero", "structure": "grid-cols-2-offset", "contentPlacement": "left", "imagePlacement": "phone-mockup" },
+    
+    { "id": "feat_grid_3", "type": "features", "structure": "grid-cols-3", "cardStyle": "icon-top" },
+    { "id": "feat_grid_4", "type": "features", "structure": "grid-cols-4", "cardStyle": "minimal-card" },
+    { "id": "feat_list_alt", "type": "features", "structure": "flex-col", "cardStyle": "image-text-alternating" },
+    { "id": "feat_bento", "type": "features", "structure": "bento-grid", "cardStyle": "varied-size" },
+    { "id": "feat_cards_overlap", "type": "features", "structure": "overlap-grid", "cardStyle": "shadow-card" },
+
+    { "id": "test_slider", "type": "testimonials", "structure": "carousel", "cardStyle": "quote-card" },
+    { "id": "test_grid_masonry", "type": "testimonials", "structure": "masonry", "cardStyle": "tweet-style" },
+    { "id": "test_single_focus", "type": "testimonials", "structure": "centered-large", "cardStyle": "portrait-left" },
+
+    { "id": "price_3_col", "type": "pricing", "structure": "grid-cols-3", "cardStyle": "standard-table" },
+    { "id": "price_compare", "type": "pricing", "structure": "full-width-table", "cardStyle": "comparison-list" },
+    { "id": "price_toggle", "type": "pricing", "structure": "grid-cols-3-toggle", "cardStyle": "highlight-middle" },
+
+    { "id": "cta_simple", "type": "cta", "structure": "centered-box", "cardStyle": "solid-bg" },
+    { "id": "cta_split", "type": "cta", "structure": "split-screen", "cardStyle": "image-right" },
+    { "id": "cta_floating", "type": "cta", "structure": "floating-bar", "cardStyle": "sticky-bottom" },
+
+    { "id": "foot_simple", "type": "footer", "structure": "flex-row-between", "cardStyle": "minimal" },
+    { "id": "foot_multi_col", "type": "footer", "structure": "grid-cols-4", "cardStyle": "links-list" },
+    { "id": "foot_newsletter", "type": "footer", "structure": "grid-cols-2-heavy", "cardStyle": "input-focus" }
+  ],
+  "functionalPatterns": {
+    "navigation": [
+      { "id": "nav_standard_top", "type": "top-bar", "behavior": "static", "layout": "logo-left-links-right" },
+      { "id": "nav_sticky_glass", "type": "top-bar", "behavior": "sticky", "layout": "glassmorphism-centered" },
+      { "id": "nav_split_center", "type": "top-bar", "behavior": "static", "layout": "links-logo-links" },
+      { "id": "nav_sidebar_left", "type": "sidebar", "behavior": "fixed", "layout": "vertical-icons-text" },
+      { "id": "nav_hamburger_overlay", "type": "overlay", "behavior": "click-trigger", "layout": "fullscreen-menu" },
+      { "id": "nav_mega_menu", "type": "top-bar", "behavior": "hover-expand", "layout": "multi-column-dropdown" }
+    ],
+    "interactions": [
+      { "id": "int_scroll_reveal", "type": "animation", "logic": "intersection-observer", "description": "Elements fade up/slide in as user scrolls" },
+      { "id": "int_parallax_hero", "type": "scroll-effect", "logic": "transform-translate", "description": "Background moves slower than foreground content" },
+      { "id": "int_tabs_content", "type": "ui-component", "logic": "vanilla-js-tabs", "description": "Switch content visibility based on active tab" },
+      { "id": "int_accordion_faq", "type": "ui-component", "logic": "details-summary", "description": "Expand/collapse content sections" },
+      { "id": "int_filter_grid", "type": "data-view", "logic": "filter-sort", "description": "Filter grid items by category data attributes" },
+      { "id": "int_modal_popup", "type": "overlay", "logic": "dialog-api", "description": "Content appears in centered modal on trigger" },
+      { "id": "int_infinite_marquee", "type": "animation", "logic": "css-keyframes", "description": "Continuous horizontal scrolling of logos/text" },
+      { "id": "int_hover_card_lift", "type": "micro-interaction", "logic": "css-transform", "description": "Cards lift and shadow deepens on hover" }
+    ]
+  },
+    "generationRules": [
+      {
+        "styleTarget": "minimal",
+        "allowedPalettes": ["cp_minimal_*"],
+        "allowedTypography": ["ts_modern_*", "ts_clean_*"],
+        "allowedShapes": ["shape_sharp", "shape_rounded_sm"],
+        "allowedLayouts": ["hero_centered", "feat_grid_3"]
+      },
+      {
+        "styleTarget": "bold",
+        "allowedPalettes": ["cp_bold_*"],
+        "allowedTypography": ["ts_bold_*"],
+        "allowedShapes": ["shape_sharp", "shape_brutalist"],
+        "allowedLayouts": ["hero_split_left", "feat_grid_3"]
+      },
+      {
+        "styleTarget": "professional",
+        "allowedPalettes": ["cp_professional_*"],
+        "allowedTypography": ["ts_professional_*", "ts_modern_*"],
+        "allowedShapes": ["shape_rounded", "shape_sharp"],
+        "allowedLayouts": ["hero_split_right", "feat_list_alt"]
+      },
+      {
+        "styleTarget": "creative",
+        "allowedPalettes": ["cp_creative_*"],
+        "allowedTypography": ["ts_creative_*"],
+        "allowedShapes": ["shape_soft", "shape_brutalist"],
+        "allowedLayouts": ["hero_centered", "feat_grid_3"]
+      },
+      {
+        "styleTarget": "technical",
+        "allowedPalettes": ["cp_technical_*"],
+        "allowedTypography": ["ts_technical_*"],
+        "allowedShapes": ["shape_sharp"],
+        "allowedLayouts": ["hero_minimal_text", "feat_list_alt"]
+      }
+    ]
+  }

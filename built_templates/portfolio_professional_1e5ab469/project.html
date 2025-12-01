@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Identity | Alex Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ALEX.DESIGN</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="btn btn-primary lean-x-trigger">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <header class="hero" style="padding: 4rem 0; background: #fff; text-align: left;">
+        <div class="container">
+            <span class="project-cat" style="font-size: 1rem; margin-bottom: 1rem;">Branding</span>
+            <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 1rem;">Corporate Identity Rebrand</h1>
+            <div style="display: flex; gap: 3rem; margin-top: 2rem; color: var(--color-text-light);">
+                <div>
+                    <strong>Client</strong><br>
+                    FinTech Solutions
+                </div>
+                <div>
+                    <strong>Date</strong><br>
+                    September 2023
+                </div>
+                <div>
+                    <strong>Role</strong><br>
+                    Lead Designer
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Image -->
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Main Project Image" style="width: 100%; height: auto;">
+    </div>
+
+    <!-- Content Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="process">Process</button>
+                <button class="tab-btn" data-tab="results">Results</button>
+            </div>
+
+            <div id="overview" class="tab-content active">
+                <div style="max-width: 800px;">
+                    <h2 class="section-title" style="font-size: 2rem;">The Challenge</h2>
+                    <p style="margin-bottom: 1.5rem;">FinTech Solutions, a leading financial services provider, approached us to modernize their brand identity. Their existing brand was perceived as outdated and did not reflect their innovative technology stack.</p>
+                    <p>The goal was to create a visual identity that communicated trust, stability, and forward-thinking innovation.</p>
+                </div>
+            </div>
+
+            <div id="process" class="tab-content">
+                <div style="max-width: 800px;">
+                    <h2 class="section-title" style="font-size: 2rem;">Our Approach</h2>
+                    <p style="margin-bottom: 1.5rem;">We began with a comprehensive audit of the competitive landscape. We identified that most competitors were using traditional serif fonts and muted colors.</p>
+                    <p style="margin-bottom: 1.5rem;">We chose a bold, modern sans-serif typography and a vibrant blue color palette to signify trust and technology. We developed a modular design system that could be easily applied across all digital and print touchpoints.</p>
+                    <ul style="list-style: disc; margin-left: 1.5rem; color: var(--color-text-light);">
+                        <li>Stakeholder Interviews</li>
+                        <li>Brand Strategy Workshop</li>
+                        <li>Visual Identity Design</li>
+                        <li>Brand Guidelines Development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="results" class="tab-content">
+                <div style="max-width: 800px;">
+                    <h2 class="section-title" style="font-size: 2rem;">The Impact</h2>
+                    <p style="margin-bottom: 2rem;">The new brand identity was successfully rolled out across all global offices. The rebrand has been credited with a significant increase in brand recognition and a boost in employee morale.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div style="background: var(--color-surface); padding: 2rem; border-radius: var(--border-radius); text-align: center;">
+                            <h3 style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem;">+25%</h3>
+                            <p>Brand Awareness</p>
+                        </div>
+                        <div style="background: var(--color-surface); padding: 2rem; border-radius: var(--border-radius); text-align: center;">
+                            <h3 style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem;">+15%</h3>
+                            <p>Website Traffic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="project-grid">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 1">
+                </div>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 2">
+                </div>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="section text-center">
+        <div class="container">
+            <p class="section-subtitle" style="margin-bottom: 1rem;">Next Project</p>
+            <h2 class="section-title"><a href="project.html" style="color: var(--color-primary);">SaaS Dashboard UI</a></h2>
+            <a href="work.html" class="btn btn-outline">Back to Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: #fff;">ALEX.DESIGN</a>
+                <p>Professional design services for forward-thinking companies.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="lean-x-trigger">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Alex Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

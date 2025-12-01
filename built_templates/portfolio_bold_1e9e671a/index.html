@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLD. | Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BOLD.</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="btn btn-primary lean-x-trigger">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">I CREATE ART <br><span class="text-primary">THAT SELLS.</span></h1>
+            <p class="hero-subtitle">Digital Designer & Brand Strategist based in New York.</p>
+            <div class="hero-cta">
+                <a href="work.html" class="btn btn-primary">View Projects</a>
+                <a href="about.html" class="btn btn-outline">About Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Work Section -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <a href="work.html" class="view-all-link">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Branding</span>
+                        <h3 class="project-title"><a href="project.html">Neon Future</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e0b7a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Web Design</span>
+                        <h3 class="project-title"><a href="project.html">Urban Architecture</a></h3>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="marketing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="project.html" class="btn btn-primary">View Case</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Marketing</span>
+                        <h3 class="project-title"><a href="project.html">Growth Strategy</a></h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3 class="service-title">Brand Identity</h3>
+                    <p>Creating memorable visual identities that stand out in crowded markets.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3 class="service-title">Web Development</h3>
+                    <p>Building fast, responsive, and accessible websites using modern tech.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bullhorn service-icon"></i>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p>Data-driven strategies to grow your audience and increase conversions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Testimonials -->
+    <section class="section bg-primary text-dark">
+        <div class="container">
+            <h2 class="section-title" style="color: #000; border-color: #000;">Client Words</h2>
+            <div class="masonry-grid">
+                <div class="masonry-item">
+                    <p class="testimonial-text">"Absolutely transformed our brand. The bold approach was exactly what we needed to shake up the industry."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Jenkins</strong>
+                        <span>CEO, TechFlow</span>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <p class="testimonial-text">"Professional, timely, and incredibly creative. The new website has doubled our leads in just one month."</p>
+                    <div class="testimonial-author">
+                        <strong>Mike Ross</strong>
+                        <span>Director, Urban Living</span>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <p class="testimonial-text">"A true partner in our growth. Not just a designer, but a strategist who understands business goals."</p>
+                    <div class="testimonial-author">
+                        <strong>Elena Rodriguez</strong>
+                        <span>Founder, GreenSpace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo">BOLD.</a>
+                <p>Designing the future, one pixel at a time.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@boldportfolio.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BOLD Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

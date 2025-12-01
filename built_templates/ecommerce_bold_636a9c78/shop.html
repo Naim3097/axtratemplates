@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | NEON ROSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">NEON ROSE.</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Collections</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">About</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <header class="hero" style="min-height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">The Collection</h1>
+                <p class="hero-subtitle">Explore our full range of bold, sustainable apparel.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Content -->
+    <section class="section">
+        <div class="container">
+            <div class="shop-layout" style="display: grid; grid-template-columns: 250px 1fr; gap: 3rem;">
+                
+                <!-- Sidebar -->
+                <aside class="shop-sidebar" style="display: none; @media(min-width: 768px) { display: block; }">
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: inline-block;">Categories</h3>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: #fff; font-weight: bold;">All Products</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted);">New Arrivals</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted);">Best Sellers</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted);">Accessories</a></li>
+                            <li style="margin-bottom: 0.8rem;"><a href="#" class="lean-x-trigger" style="color: var(--color-text-muted);">Sale</a></li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: inline-block;">Filter By</h3>
+                        
+                        <div class="accordion">
+                            <details class="accordion-item" style="background: transparent; border: none; margin-bottom: 1rem;">
+                                <summary class="accordion-summary" style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Size</summary>
+                                <div class="accordion-content" style="padding: 1rem 0;">
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> XS</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> S</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> M</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> L</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> XL</label>
+                                </div>
+                            </details>
+                            <details class="accordion-item" style="background: transparent; border: none; margin-bottom: 1rem;">
+                                <summary class="accordion-summary" style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Color</summary>
+                                <div class="accordion-content" style="padding: 1rem 0;">
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> Black</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> White</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> Red</label>
+                                    <label style="display: block; margin-bottom: 0.5rem;"><input type="checkbox"> Blue</label>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 1">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Neon Bomber</h3>
+                            <span class="product-price">$120.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Graphic Tee</h3>
+                            <span class="product-price">$45.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1503342217505-b0815a046baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 3">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Urban Hoodie</h3>
+                            <span class="product-price">$85.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1542272617-08f086302542?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 4">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Cargo Pants</h3>
+                            <span class="product-price">$95.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 5">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Street Sneakers</h3>
+                            <span class="product-price">$110.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 6">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Oversized Shirt</h3>
+                            <span class="product-price">$60.00</span>
+                            <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">NEON ROSE.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Bold fashion for the bold generation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">New Arrivals</a></li>
+                    <li><a href="shop.html">Best Sellers</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">About Us</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 NEON ROSE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

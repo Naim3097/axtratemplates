@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Bomber | NEON ROSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">NEON ROSE.</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Collections</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">About</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="lean-x-trigger"><i class="fas fa-search"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Product Images -->
+                <div style="display: grid; gap: 1rem;">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product Main" style="width: 100%; border: 2px solid #fff; box-shadow: 10px 10px 0px var(--color-primary);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 1" style="width: 100%; border: 2px solid #fff;">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0815a046baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detail 2" style="width: 100%; border: 2px solid #fff;">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div>
+                    <h1 style="font-size: 3rem; margin-bottom: 1rem; text-transform: uppercase;">Neon Bomber</h1>
+                    <p style="font-size: 1.5rem; color: var(--color-primary); font-weight: bold; margin-bottom: 2rem;">$120.00</p>
+                    
+                    <p style="margin-bottom: 2rem; line-height: 1.8; color: var(--color-text-muted);">
+                        Make a statement with our signature Neon Bomber. Featuring a bold design and premium sustainable materials, this jacket is perfect for those who want to stand out while staying warm.
+                    </p>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 1rem;">Size</h4>
+                        <div style="display: flex; gap: 1rem;">
+                            <button style="width: 40px; height: 40px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">XS</button>
+                            <button style="width: 40px; height: 40px; background: var(--color-primary); border: 1px solid var(--color-primary); color: #fff; font-weight: bold; cursor: pointer;">S</button>
+                            <button style="width: 40px; height: 40px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">M</button>
+                            <button style="width: 40px; height: 40px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">L</button>
+                            <button style="width: 40px; height: 40px; background: transparent; border: 1px solid #fff; color: #fff; cursor: pointer;">XL</button>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+                        <input type="number" value="1" min="1" style="width: 60px; padding: 0.5rem; background: transparent; border: 2px solid #fff; color: #fff; text-align: center; font-family: 'Nunito', sans-serif;">
+                        <button class="btn" style="flex: 1;">Add to Cart</button>
+                    </div>
+
+                    <div class="accordion">
+                        <details class="accordion-item">
+                            <summary class="accordion-summary">Description</summary>
+                            <div class="accordion-content">
+                                <p>100% Recycled Polyester. Water-resistant finish. Ribbed cuffs and hem. Two side pockets.</p>
+                            </div>
+                        </details>
+                        <details class="accordion-item">
+                            <summary class="accordion-summary">Shipping & Returns</summary>
+                            <div class="accordion-content">
+                                <p>Free shipping on orders over $150. 30-day return policy for unworn items.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section bg-surface">
+        <div class="container">
+            <h2 class="section-title text-center">Complete the Look</h2>
+            <div class="product-grid">
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a302d2d3f524?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Graphic Tee</h3>
+                        <span class="product-price">$45.00</span>
+                        <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                    </div>
+                </article>
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272617-08f086302542?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cargo Pants</h3>
+                        <span class="product-price">$95.00</span>
+                        <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                    </div>
+                </article>
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 5">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Street Sneakers</h3>
+                        <span class="product-price">$110.00</span>
+                        <a href="product.html" class="btn btn-outline btn-block" style="padding: 0.5rem;">View Details</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="font-size: 2rem;">NEON ROSE.</a>
+                <p style="margin-top: 1rem; color: var(--color-text-muted);">Bold fashion for the bold generation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">New Arrivals</a></li>
+                    <li><a href="shop.html">Best Sellers</a></li>
+                    <li><a href="shop.html">Accessories</a></li>
+                    <li><a href="shop.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="lean-x-trigger">About Us</a></li>
+                    <li><a href="#" class="lean-x-trigger">Sustainability</a></li>
+                    <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                    <li><a href="#" class="lean-x-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="lean-x-trigger"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p style="color: var(--color-text-muted);">&copy; 2025 NEON ROSE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

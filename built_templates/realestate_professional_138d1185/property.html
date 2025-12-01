@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Villa | Prestige Estates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">PRESTIGE<span style="color: var(--color-accent);">.</span></a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="listings.html" class="nav-link" style="color: var(--color-primary);">Properties <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown">
+                        <a href="listings.html">For Sale</a>
+                        <a href="listings.html">For Rent</a>
+                        <a href="listings.html">New Developments</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link lean-x-trigger">Agents</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <a href="#" class="btn lean-x-trigger">Schedule Viewing</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Property Gallery -->
+    <section style="display: grid; grid-template-columns: 2fr 1fr; height: 600px;">
+        <div style="background-image: url('https://images.unsplash.com/photo-1600596542815-27bfef40d396?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;"></div>
+        <div style="display: grid; grid-template-rows: 1fr 1fr;">
+            <div style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
+            <div style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center; position: relative;">
+                <button class="btn lean-x-trigger" style="position: absolute; bottom: 2rem; right: 2rem; z-index: 10;">View All Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Details -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                
+                <!-- Main Content -->
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 2rem;">
+                        <div>
+                            <h1 style="margin-bottom: 0.5rem;">Modern Villa</h1>
+                            <p style="font-size: 1.2rem; color: var(--color-text-muted);"><i class="fas fa-map-marker-alt"></i> 123 Palm Drive, Beverly Hills, CA 90210</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 2.5rem; font-weight: bold; color: var(--color-primary); font-family: var(--font-heading);">$2,500,000</div>
+                            <span style="background: var(--color-surface); color: var(--color-primary); padding: 0.2rem 0.5rem; font-size: 0.9rem;">For Sale</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 3rem; padding: 2rem 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-bed" style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                            <div style="font-weight: bold;">4 Beds</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-bath" style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                            <div style="font-weight: bold;">3 Baths</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-ruler-combined" style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                            <div style="font-weight: bold;">3,500 sqft</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-car" style="font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                            <div style="font-weight: bold;">2 Garage</div>
+                        </div>
+                    </div>
+
+                    <div class="tabs">
+                        <div class="tab-list">
+                            <button class="tab-btn active" data-tab="desc">Description</button>
+                            <button class="tab-btn" data-tab="features">Features</button>
+                            <button class="tab-btn" data-tab="location">Location</button>
+                        </div>
+                        
+                        <div id="desc" class="tab-content active">
+                            <p style="margin-bottom: 1rem;">Experience the epitome of luxury living in this stunning modern villa located in the heart of Beverly Hills. Designed by award-winning architects, this home features an open-concept layout that seamlessly blends indoor and outdoor living.</p>
+                            <p>The gourmet kitchen is equipped with top-of-the-line appliances and a large center island, perfect for entertaining. The master suite offers a private retreat with a spa-like bathroom and a walk-in closet. Outside, you'll find a sparkling pool, a spacious patio, and lush landscaping.</p>
+                        </div>
+                        
+                        <div id="features" class="tab-content">
+                            <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <li><i class="fas fa-check" style="color: var(--color-accent); margin-right: 0.5rem;"></i> Smart Home System</li>
+                                <li><i class="fas fa-check" style="color: var(--color-accent); margin-right: 0.5rem;"></i> Wine Cellar</li>
+                                <li><i class="fas fa-check" style="color: var(--color-accent); margin-right: 0.5rem;"></i> Home Theater</li>
+                                <li><i class="fas fa-check" style="color: var(--color-accent); margin-right: 0.5rem;"></i> Infinity Pool</li>
+                                <li><i class="fas fa-check" style="color: var(--color-accent); margin-right: 0.5rem;"></i> Outdoor Kitchen</li>
+                                <li><i class="fas fa-check" style="color: var(--color-accent); margin-right: 0.5rem;"></i> Security System</li>
+                            </ul>
+                        </div>
+                        
+                        <div id="location" class="tab-content">
+                            <div style="background: #eee; height: 300px; display: flex; align-items: center; justify-content: center; color: #666;">
+                                Map Placeholder
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <div style="background: #fff; border: 1px solid #eee; padding: 2rem; position: sticky; top: 120px;">
+                        <h3 style="margin-bottom: 1.5rem;">Contact Agent</h3>
+                        
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Agent" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <div style="font-weight: bold;">Michael Scott</div>
+                                <div style="color: var(--color-text-muted); font-size: 0.9rem;">Senior Broker</div>
+                            </div>
+                        </div>
+
+                        <form style="display: grid; gap: 1rem;">
+                            <input type="text" placeholder="Your Name" style="padding: 0.8rem; border: 1px solid #ddd; width: 100%;">
+                            <input type="email" placeholder="Your Email" style="padding: 0.8rem; border: 1px solid #ddd; width: 100%;">
+                            <input type="tel" placeholder="Your Phone" style="padding: 0.8rem; border: 1px solid #ddd; width: 100%;">
+                            <textarea rows="4" placeholder="Message" style="padding: 0.8rem; border: 1px solid #ddd; width: 100%;">I am interested in 123 Palm Drive.</textarea>
+                            <button class="btn lean-x-trigger" style="width: 100%;">Send Message</button>
+                        </form>
+                        
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <button class="btn btn--outline lean-x-trigger" style="width: 100%;"><i class="fas fa-phone"></i> Call Agent</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>PRESTIGE.</h3>
+                    <p style="color: #ccc;">Your trusted partner in luxury real estate.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="listings.html">Properties</a>
+                    <a href="#" class="lean-x-trigger">Agents</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">123 Luxury Lane</p>
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">Beverly Hills, CA 90210</p>
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">(555) 123-4567</p>
+                    <p style="color: #ccc;">info@prestige.com</p>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #ccc;">
+                &copy; 2025 Prestige Estates. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

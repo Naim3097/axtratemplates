@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zest & Zing | Creative Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Zest & Zing</a>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Overlay Nav -->
+    <nav class="overlay-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="#" class="btn btn--outline" style="margin-top: 2rem; color: #fff; border-color: #fff;">Order Online</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="parallax-hero">
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <h1>Taste the Difference</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--color-text-muted);">Experience a culinary journey like no other. Where flavor meets creativity in every bite.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="reservations.html" class="btn">Book a Table</a>
+                <a href="menu.html" class="btn btn--secondary">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-item"><i class="fas fa-star"></i> Fresh Ingredients</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> Award Winning Chef</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> Farm to Table</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> Creative Cocktails</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> Vegan Options</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> Live Music</div>
+        </div>
+    </div>
+
+    <!-- Featured Dishes -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">Chef's Favorites</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish 1">
+                    <h3>Rainbow Salad</h3>
+                    <p style="margin-bottom: 1rem;">A vibrant mix of organic greens, roasted beets, goat cheese, and candied walnuts.</p>
+                    <span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary);">$14</span>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish 2">
+                    <h3>Truffle Pizza</h3>
+                    <p style="margin-bottom: 1rem;">Wood-fired crust topped with wild mushrooms, truffle oil, and fresh mozzarella.</p>
+                    <span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary);">$22</span>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dish 3">
+                    <h3>Seafood Paella</h3>
+                    <p style="margin-bottom: 1rem;">Saffron-infused rice with shrimp, mussels, clams, and chorizo.</p>
+                    <span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary);">$28</span>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="menu.html" class="btn btn--outline">See Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background-color: #fff;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">What People Say</h2>
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" style="transform: rotate(-3deg); border: 5px solid var(--color-accent);">
+                </div>
+                <div>
+                    <div style="background-color: var(--color-bg); padding: 3rem; border-radius: var(--border-radius); position: relative;">
+                        <i class="fas fa-quote-left" style="font-size: 3rem; color: var(--color-secondary); position: absolute; top: -20px; left: 20px;"></i>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem; font-style: italic;">"The most creative food I've had in years! The atmosphere is electric and the staff makes you feel like family. Highly recommended!"</p>
+                        <h4 style="margin-bottom: 0;">- Jessica Parker</h4>
+                        <p style="color: var(--color-text-muted);">Food Critic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block; color: #fff;">Zest & Zing</a>
+                    <p>Creative dining for the modern soul.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="about.html">Our Story</a>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <p style="margin-bottom: 1rem;">Subscribe for updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="button" class="btn btn--secondary btn-lean-x">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div style="margin-top: 4rem; text-align: center; opacity: 0.5;">
+                <p>&copy; 2023 Zest & Zing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

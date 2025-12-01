@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Alex Morgan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ALEX MORGAN</a>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="work.html" class="nav-link active" style="border-bottom: 2px solid var(--color-primary);">Work</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#" class="nav-link lean-x-trigger">Contact</a>
+                <a href="#" class="btn lean-x-trigger">Hire Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-bottom: 2rem;">
+        <div class="container" style="text-align: center;">
+            <h1 class="reveal">Selected Works</h1>
+            <p class="reveal" style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">A collection of projects that define my style and approach to design.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="filter-controls reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="art">Art Direction</button>
+            </div>
+
+            <div class="grid-3">
+                <!-- Item 1 -->
+                <article class="project-card reveal" data-category="branding">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Minimal Brand</h3>
+                            <p style="color: var(--color-text-muted);">Branding</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="project-card reveal" data-category="art">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Abstract Art</h3>
+                            <p style="color: var(--color-text-muted);">Art Direction</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="project-card reveal" data-category="web">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Tech Startup</h3>
+                            <p style="color: var(--color-text-muted);">Web Design</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="project-card reveal" data-category="branding">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Coffee Co.</h3>
+                            <p style="color: var(--color-text-muted);">Branding</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Item 5 -->
+                <article class="project-card reveal" data-category="web">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Agency Site</h3>
+                            <p style="color: var(--color-text-muted);">Web Design</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="project-card reveal" data-category="art">
+                    <a href="project.html">
+                        <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project" class="project-img">
+                        <div class="project-info">
+                            <h3>Editorial</h3>
+                            <p style="color: var(--color-text-muted);">Art Direction</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <button class="btn btn--outline lean-x-trigger">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>ALEX MORGAN</h3>
+                    <p style="color: #ccc;">Creating digital experiences that matter.</p>
+                </div>
+                <div>
+                    <h3>Sitemap</h3>
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <a href="#" class="lean-x-trigger">Instagram</a>
+                    <a href="#" class="lean-x-trigger">Twitter</a>
+                    <a href="#" class="lean-x-trigger">LinkedIn</a>
+                    <a href="#" class="lean-x-trigger">Dribbble</a>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <p style="color: #ccc; margin-bottom: 1rem;">Subscribe for design insights.</p>
+                    <div style="display: flex;">
+                        <input type="email" placeholder="Email Address" style="padding: 0.5rem; border: none; width: 100%;">
+                        <button class="btn" style="padding: 0.5rem 1rem; border: 1px solid #fff;">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #333; text-align: center; color: #666;">
+                &copy; 2025 Alex Morgan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

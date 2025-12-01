@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Areas | Sterling & Partners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div>
+            <a href="index.html" class="logo">Sterling.</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="practice-areas.html" class="nav-link active"><i class="fas fa-gavel"></i> Practice Areas</a></li>
+                <li><a href="attorneys.html" class="nav-link"><i class="fas fa-users"></i> Attorneys</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#" class="nav-link lean-x-trigger"><i class="fas fa-file-alt"></i> Client Portal</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a href="#" class="lean-x-trigger"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="lean-x-trigger"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">&copy; 2025 Sterling & Partners.</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Header -->
+        <header class="hero" style="min-height: 40vh;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Our Practice Areas</h1>
+                    <p class="hero-subtitle">Comprehensive legal solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filterable Grid -->
+        <section class="section">
+            <div class="container">
+                
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Services</button>
+                    <button class="filter-btn" data-filter="corporate">Corporate</button>
+                    <button class="filter-btn" data-filter="litigation">Litigation</button>
+                    <button class="filter-btn" data-filter="ip">Intellectual Property</button>
+                </div>
+
+                <div class="grid-3">
+                    <!-- Corporate -->
+                    <div class="card filter-item" data-category="corporate">
+                        <i class="fas fa-building" style="font-size: 2rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3>Mergers & Acquisitions</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Expert guidance through complex merger transactions and acquisitions.</p>
+                        <a href="#" class="lean-x-trigger" style="color: var(--color-accent); font-weight: 700;">Learn More &rarr;</a>
+                    </div>
+                    <div class="card filter-item" data-category="corporate">
+                        <i class="fas fa-file-contract" style="font-size: 2rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3>Contract Law</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Drafting, reviewing, and negotiating contracts to protect your interests.</p>
+                        <a href="#" class="lean-x-trigger" style="color: var(--color-accent); font-weight: 700;">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Litigation -->
+                    <div class="card filter-item" data-category="litigation">
+                        <i class="fas fa-gavel" style="font-size: 2rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3>Commercial Litigation</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Resolving business disputes through negotiation, arbitration, or trial.</p>
+                        <a href="#" class="lean-x-trigger" style="color: var(--color-accent); font-weight: 700;">Learn More &rarr;</a>
+                    </div>
+                    <div class="card filter-item" data-category="litigation">
+                        <i class="fas fa-balance-scale-right" style="font-size: 2rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3>Employment Disputes</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Representing employers and employees in workplace conflict resolution.</p>
+                        <a href="#" class="lean-x-trigger" style="color: var(--color-accent); font-weight: 700;">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- IP -->
+                    <div class="card filter-item" data-category="ip">
+                        <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3>Patent Law</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Securing and defending your inventions and technological innovations.</p>
+                        <a href="#" class="lean-x-trigger" style="color: var(--color-accent); font-weight: 700;">Learn More &rarr;</a>
+                    </div>
+                    <div class="card filter-item" data-category="ip">
+                        <i class="fas fa-copyright" style="font-size: 2rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h3>Trademark Registration</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Protecting your brand identity and commercial reputation.</p>
+                        <a href="#" class="lean-x-trigger" style="color: var(--color-accent); font-weight: 700;">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="background: var(--color-primary); color: #fff; padding: 4rem 0;">
+            <div class="container">
+                <div class="grid-3">
+                    <div>
+                        <h3 style="color: #fff;">Sterling.</h3>
+                        <p style="color: rgba(255,255,255,0.7);">Providing top-tier legal services since 1995.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #fff; font-family: 'Quicksand', sans-serif;">Quick Links</h4>
+                        <ul style="color: rgba(255,255,255,0.7);">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="practice-areas.html">Practice Areas</a></li>
+                            <li><a href="attorneys.html">Attorneys</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #fff; font-family: 'Quicksand', sans-serif;">Contact</h4>
+                        <p style="color: rgba(255,255,255,0.7);">
+                            123 Legal Ave, Suite 100<br>
+                            New York, NY 10001<br>
+                            (212) 555-0123<br>
+                            info@sterlingpartners.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

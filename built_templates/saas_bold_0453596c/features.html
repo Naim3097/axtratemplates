@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Bold SaaS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">NEON<span style="color: #fff;">ROSE</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="features.html" class="nav-link" style="color: var(--color-primary);">Features</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="btn btn-outline lean-x-trigger" style="padding: 0.5rem 1.5rem; font-size: 1rem;">Login</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 150px; padding-bottom: 3rem; background: var(--color-surface);">
+        <div class="container">
+            <h1 class="section-title" style="text-align: left; font-size: 4rem;">Platform Capabilities</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; color: var(--color-text-muted);">Explore the tools that will redefine your workflow. Built for speed, designed for scale.</p>
+        </div>
+    </section>
+
+    <!-- Alternating Features -->
+    <section class="section">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="grid-2" style="align-items: center; margin-bottom: 6rem;">
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Real-Time Analytics</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem;">Watch your data flow in real-time. Our dashboard updates instantly, giving you the pulse of your business without the lag.</p>
+                    <ul style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--color-primary); margin-right: 10px;"></i> Live User Tracking</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--color-primary); margin-right: 10px;"></i> Instant Revenue Metrics</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--color-primary); margin-right: 10px;"></i> Custom Event Streams</li>
+                    </ul>
+                    <a href="#" class="btn lean-x-trigger">Explore Analytics</a>
+                </div>
+                <div style="background: #222; height: 400px; border: 1px solid var(--color-primary); box-shadow: var(--shadow-hard); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chart-bar" style="font-size: 5rem; color: #444;"></i>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="grid-2" style="align-items: center; margin-bottom: 6rem;">
+                <div style="order: 2;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Automated Workflows</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem;">Stop doing busy work. Set up triggers and actions to automate repetitive tasks so you can focus on strategy.</p>
+                    <ul style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--color-primary); margin-right: 10px;"></i> Drag-and-Drop Builder</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--color-primary); margin-right: 10px;"></i> 500+ Integrations</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--color-primary); margin-right: 10px;"></i> Conditional Logic</li>
+                    </ul>
+                    <a href="#" class="btn lean-x-trigger">Automate Now</a>
+                </div>
+                <div style="order: 1; background: #222; height: 400px; border: 1px solid var(--color-primary); box-shadow: var(--shadow-hard); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-cogs" style="font-size: 5rem; color: #444;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="section" style="background: var(--color-surface);">
+        <div class="container">
+            <h2 class="section-title">Technical Deep Dive</h2>
+            
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="api">API Access</button>
+                    <button class="tab-btn" data-tab="security">Security</button>
+                    <button class="tab-btn" data-tab="deployment">Deployment</button>
+                </div>
+
+                <div id="api" class="tab-content active">
+                    <h3>Robust GraphQL API</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Full access to all your data via our documented GraphQL API. Build custom frontends or integrate with internal tools seamlessly.</p>
+                    <pre style="background: #000; padding: 1rem; border: 1px solid #333; color: var(--color-primary); overflow-x: auto;">
+query {
+  user(id: "123") {
+    name
+    email
+    subscription {
+      plan
+      status
+    }
+  }
+}</pre>
+                </div>
+
+                <div id="security" class="tab-content">
+                    <h3>Bank-Grade Security</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">We use AES-256 encryption at rest and TLS 1.3 in transit. SOC2 Type II certified.</p>
+                    <div class="grid-3">
+                        <div style="padding: 1rem; border: 1px solid #333;">
+                            <h4>SSO Support</h4>
+                            <p style="font-size: 0.9rem; color: #888;">SAML, OIDC, Google, GitHub</p>
+                        </div>
+                        <div style="padding: 1rem; border: 1px solid #333;">
+                            <h4>Audit Logs</h4>
+                            <p style="font-size: 0.9rem; color: #888;">Full traceability of all actions</p>
+                        </div>
+                        <div style="padding: 1rem; border: 1px solid #333;">
+                            <h4>Role-Based Access</h4>
+                            <p style="font-size: 0.9rem; color: #888;">Granular permission controls</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="deployment" class="tab-content">
+                    <h3>Global Edge Network</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Deploy your configurations to 35+ regions instantly. Low latency for all your users, everywhere.</p>
+                    <p style="color: var(--color-text-muted);">Powered by a custom CDN infrastructure designed for dynamic content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="font-size: 1.5rem;">NEON<span style="color: #fff;">ROSE</span></a>
+                    <p style="color: var(--color-text-muted); margin-top: 1rem;">Empowering the next generation of digital businesses with bold tools.</p>
+                </div>
+                <div>
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#" class="lean-x-trigger">Integrations</a></li>
+                        <li><a href="#" class="lean-x-trigger">Changelog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" class="lean-x-trigger">About Us</a></li>
+                        <li><a href="#" class="lean-x-trigger">Careers</a></li>
+                        <li><a href="#" class="lean-x-trigger">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-github"></i></a>
+                        <a href="#" class="lean-x-trigger"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: var(--color-text-muted); font-size: 0.9rem;">
+                &copy; 2025 NeonRose SaaS. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <h2 style="color: var(--color-primary); margin-bottom: 1rem;">Join NeonRose</h2>
+            <p style="margin-bottom: 2rem;">Sign up now to unlock full access to our platform.</p>
+            <button class="btn" style="width: 100%; margin-bottom: 1rem;"><i class="fab fa-google"></i> Sign up with Google</button>
+            <button class="btn btn-outline" style="width: 100%;">Sign up with Email</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
